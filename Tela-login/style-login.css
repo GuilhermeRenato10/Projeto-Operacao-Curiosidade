@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Poppins;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+div#box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 34vw;  /* Aumentei para 35% da largura da viewport */
+    height: 78vh; /* Aumentei para 65% da altura da viewport */
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.096);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.123);
+}
+
+img#imgOC {
+    padding: 4vh; /* Ajustado para 4% da altura da viewport */
+    width: 80%;   /* Reduzi a largura para 80% da div */
+    height: auto;
+}
+
+p#sub-title {
+    text-align: center; 
+    font-size: 0.8em;
+    width: 100%;
+}
+
+hr {
+    width: 17vw; /* Ajustado para 18% da largura da viewport */
+    margin-top: 2vh;
+    align-self: center;
+    margin-bottom: 3vh;
+}
+
+form#login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 92%;
+}
+
+/* Pai e filhos*/
+
+div.fields {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+input { 
+    /* Aplicando estilos comuns a todos os elementos de entrada <input> */
+    height: 8vh;  /* Aumentei para 7% da altura da viewport */
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    width: 100%;
+}
+
+label#labelUser {
+    font-size: 0.8em;
+    margin-top: 2vw;
+}
+
+input.user-container {
+    background-image: url('./icons/icon-message.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 20px 20px;
+    padding-left: 50px;
+}
+
+input.password-container {
+    background-image: url('./icons/icon-lock.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 20px 20px;
+    padding-left: 50px;
+}
+
+label#labelPass {
+    margin-top: 3.5vh;
+    font-size: 0.8em;
+}
+
+div#forgot {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%; 
+    margin-top: 1vh;
+}
+
+div#forgot > p {
+    color: #6e27a1;
+    font-size: 0.8em;
+}
+
+div.bottom-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+input[type="submit"] {
+    text-align: center;
+    margin-top: 5vh;
+    font-weight: bolder;
+    border: none;
+    background-color: #6e27a1;
+    color: white;
+    border-radius: 10px;
+    width: 12vw;  /* Aumentei para 12% da largura da viewport */
+    height: 6vh;  /* Aumentei para 6% da altura da viewport */
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+div.info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 38vw;  
+    height: 80vh; 
+}
+
+img#onionBig {
+    width: 60%;  
+}
+
+p.info-text {
+    font-size: 0.9em;
+    margin-top: 2vw;
+    text-align: justify;
+    font-style: italic;
+    font-weight: 400;
+}
+
+p > span.pColor {
+    color: #6e27a1;
+}
+
+div.mark {
+    display: flex;
+    width: 100%;
+    margin-top: 10vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+div.mark > p {
+    font-size: 0.6em;
+}
+
+img.logoFL {
+    width: 28%;   
+}

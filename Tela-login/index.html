@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="style-login.css">
+</head>
+
+<body>
+    <main id="principal">
+        <div id="box-container">
+
+            <img id="imgOC" src="../imgs/logoescrita.svg" alt="logo">
+            <p id="sub-title">Bem-vindo de volta! Faça login para continuar.</p>
+            <hr>
+
+            <form id="login" action="">
+                <div class="fields">
+                    <label id="labelUser" for="user">E-mail ou nome de usuário</label>
+                    <input class="user-container" type="user" name="user" id="user" placeholder="Insira aqui seu e-mail ou nome de usuário"> 
+                </div>
+
+                <div class="fields">
+                    <label id="labelPass" for="pass">Senha</label>
+                    <input class="password-container" type="password" name="password" id="pass" placeholder="Insira aqui a sua senha">
+                </div>
+
+                <div id="forgot">
+                    <p>Esqueceu sua senha? <a href="#">Clique aqui</a></p>
+                </div>
+
+                <div class="bottom-submit">
+                    <input id="enter" type="submit" value="ENTRAR">
+                </div>
+            </form>
+        </div>
+
+        <section id="additional-info">
+                <div class="info-content">
+                    <img id="onionBig" src="../imgs/big_onion_facts_and_data.svg" alt="Onion-facts">
+                    <p class="info-text">"A primeira camada da cebola é sobre conhecer o colaborador
+                        além do cargo, revelando suas <span class="pColor">necessidades</span> e <span class="pColor">objetivos pessoais</span>."
+                    </p>
+                    <div class="mark">
+                        <p>Powered by</p>
+                        <img class="logoFL" src="../imgs/forlogic logo.svg" alt="logo">
+                    </div>
+                </div>
+        </section>
+
+    </main>
+    <script src="script-login.js"></script>
+</body>
+
+</html>
