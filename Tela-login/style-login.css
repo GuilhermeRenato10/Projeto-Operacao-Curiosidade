@@ -79,7 +79,7 @@ label#labelUser {
 }
 
 input.user-container {
-    background-image: url('./icons/icon-message.png');
+    background-image: url('../icons/icon-message.png');
     background-repeat: no-repeat;
     background-position: 10px center;
     background-size: 20px 20px;
@@ -87,7 +87,7 @@ input.user-container {
 }
 
 input.password-container {
-    background-image: url('./icons/icon-lock.png');
+    background-image: url('../icons/icon-lock.png');
     background-repeat: no-repeat;
     background-position: 10px center;
     background-size: 20px 20px;
