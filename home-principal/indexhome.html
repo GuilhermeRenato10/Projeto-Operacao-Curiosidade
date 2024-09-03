@@ -4,25 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home principal</title>
-</head>
+    <link rel="stylesheet" href="style-home.css">
+</head> 
 <body>
         <div id="container">
             <nav id="sidebar">
-                <img src="imgLogo/logoescrita.svg" alt="logo operação-curiosidade">
+                <div id="imgOC">
+                    <img id="logoOC" src="./imgLogo/logoescrita.svg" alt="logo operação-curiosidade">
+                </div>
                 <ul>
-                    <li>Visão Geral</li>
+                    <li id="vg" class="items">Visão Geral</li>
                     <hr>
-                    <li>Cadastrar Curiosidade</li>
+                    <li id="cc" class="items">Cadastrar Curiosidade</li>
                     <hr>
-                    <li>Meus Cadastros</li>
-                    <li>Relatórios</li>
+                    <li id="mc" class="items">Meus Cadastros</li>
+                    <li id="rs" class="items">Relatórios</li>
                     <hr>
                 </ul>
+                <div id="footerDiv"></div>
             </nav>
-
             <div id="contentMain">
                 <header>
                     <input type="text" name="search" id="search" placeholder="Pesquise Aqui">
+                    <button id="toggleButton" aria-label="Toggle brush mode">
+                        <img src="../icons/brush.png" alt="Brush icon">
                     <div id="filtros">
                         
                     </div>

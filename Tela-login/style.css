@@ -50,7 +50,7 @@ p#sub-title {
 }
 
 hr {
-    width: 17vw; /* Ajustado para 18% da largura da viewport */
+    width: 17vw; 
     margin-top: 2vh;
     align-self: center;
     margin-bottom: 3vh;
