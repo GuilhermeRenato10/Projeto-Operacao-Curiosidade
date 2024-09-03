@@ -1,54 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home principal</title>
 </head>
 <body>
-    <main class="principal">
+        <div id="container">
+            <nav id="sidebar">
+                <img src="imgLogo/logoescrita.svg" alt="logo operação-curiosidade">
+                <ul>
+                    <li>Visão Geral</li>
+                    <hr>
+                    <li>Cadastrar Curiosidade</li>
+                    <hr>
+                    <li>Meus Cadastros</li>
+                    <li>Relatórios</li>
+                    <hr>
+                </ul>
+            </nav>
 
-        <nav id="sidebar">
-            <img src="imgLogo/logoescrita.svg" alt="logo operação-curiosidade">
-            <ul>
-                <li>Visão Geral</li>
-                <hr>
-                <li>Cadastrar Curiosidade</li>
-                <hr>
-                <li>Meus Cadastros</li>
-                <li>Relatórios</li>
-                <hr>
-            </ul>
-        </nav>
-
-        <section class="content">
-            <input type="text" name="search" id="search" placeholder="Pesquise Aqui">
-
-            <div id="links">
-                <p>Últimas cadastradas</p>
-                <p>Compartilhadas por mim</p>
-                <p>Compartilhadas comigo</p>
-            </div>
-
-            <div class="cadastrados">
-                iframe
-            </div>
-        </section>
-
-        <div class="content-right">
-            <div class="usuario">
-
-            </div>
-
-            <div class="cards">
-
-            </div>
-
-            <div class="mark">
-                <p>Powered by</p>
-                <img src="" alt="logo-forlogic">
+            <div id="contentMain">
+                <header>
+                    <input type="text" name="search" id="search" placeholder="Pesquise Aqui">
+                    <div id="filtros">
+                        
+                    </div>
+                </header>
+                <main>
+                    <section id="peopleCards">
+                        <ul>
+                            <li>
+                                <article class="cardPerfil">
+    
+                                </article>
+                            </li>
+                            <li>
+                                <article class="cardPerfil">
+    
+                                </article>
+                            </li>
+                            <li>
+                                <article class="cardPerfil">
+    
+                                </article>
+                            </li>
+                        </ul>
+                    </section>
+                    <aside id="infoCards">
+                        <div class="mark">
+                            <p>Powered by</p>
+                            <img class="logoFL" src="" alt="logo-forlogic">
+                        </div>
+                    </aside>
+                </main>
             </div>
         </div>
-    </main>
 </body>
 </html>
