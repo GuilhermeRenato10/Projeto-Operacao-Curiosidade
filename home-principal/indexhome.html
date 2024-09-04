@@ -26,13 +26,20 @@
             <div id="contentMain">
                 <header>
                     <input type="text" name="search" id="search" placeholder="Pesquise Aqui">
-                    
-                    <div id="filtros">
-                        <p id="border">Últimas cadastradas</p>
-                        <p class="group">Compartilhadas por mim</p>
-                        <p class="group">Compartilhadas comigo</p>
+                    <input type="checkbox" id="switch" /><label for="switch"></label>
+                    <div id="bell"><a href="#"></a></div>
+                    <div class="perfil">
+                        <div class="fotoPerfil">
+                            
+                        </div>
+                        <div></div>
                     </div>
                 </header>
+                <div id="filtros">
+                    <p id="border">Últimas cadastradas</p>
+                    <p class="group">Compartilhadas por mim</p>
+                    <p class="group">Compartilhadas comigo</p>
+                </div>
                 <main>
                     <section id="peopleCards">
                         <ul>
@@ -53,10 +60,25 @@
                             </li>
                         </ul>
                     </section>
-                    <aside id="infoCards">
+                    <aside class="infoCards">
+                        <div class="cardInfo">
+                            <div class="layoutP">
+                                <p>Total Cadastrado</p>
+                            </div>
+                        </div>
+                        <div class="cardInfo">
+                            <div class="layoutP">
+                                <p>Cadastros Pendentes</p>
+                            </div>
+                        </div>
+                        <div class="cardInfo">
+                            <div class="layoutP">
+                                <p>Cadastros Ativos</p>
+                            </div>
+                        </div>
                         <div class="mark">
                             <p>Powered by</p>
-                            <img class="logoFL" src="" alt="logo-forlogic">
+                            <img class="logoFL" src="../imgs/forlogic logo.svg" alt="logo-forlogic">
                         </div>
                     </aside>
                 </main>

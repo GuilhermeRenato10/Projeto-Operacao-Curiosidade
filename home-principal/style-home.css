@@ -32,22 +32,22 @@ div#container {
 nav#sidebar {
     display: flex;
     flex-direction: column;
-    width: 20%; 
+    width: 19%; 
     background-color: white; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adicionando o box-shadow */
-    z-index: 1; /* Garantindo que a nav esteja à frente de outros elementos */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
 }
 
 div#imgOC {
-    border-radius: 20px 0px 0px 0px;
+    border-radius: 25px 0px 0px 0px;
     background-color: var(--main-color);
     width: 100%;
-    height: 12%; /* Aumentando a altura */
+    height: 10%; 
 }
 
 img#logoOC {
-    width: 80%; /* Ajuste a largura para ficar proporcional */
-    padding: 10%;
+    width: 100%; /* Ajuste a largura para ficar proporcional */
+    padding: 7%;
 }
 
 #sidebar ul {
@@ -136,10 +136,8 @@ div#contentMain {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background-color: white;
     padding: 2%;
-    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -151,20 +149,99 @@ input#search {
     width: 55%;
     height: 3em;
     padding-left: 2.5em; /* Para afastar o texto do ícone */
-    border: 1px solid #ccc;
+    border: 1px solid var(--main-color);
     border-radius: 5px;
     margin-left: 2%;
+    margin-top: 1%;
 }
 
 input#search:focus {
     background-image: none;
 }
 
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+    width: 50px;
+    height: 27px;
+    background: rgb(185, 185, 185);
+    display: block;
+    border-radius: 100px;
+    position: relative;
+    margin-left: 2%;
+    margin-top: 1%;
+    background-image: url('../icons/brush.png');
+    background-repeat: no-repeat;
+    background-size: 19px 19px;
+    background-position: 10% center;
+    /* Remove text-indent, se houver */
+}
+
+label::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 21px;
+    height: 21px;
+    background: #fff;
+    border-radius: 50px;
+    transition: 0.3s;
+    background-image: url('../icons/brush.png'); /* Opcional: Ícone adicional, se necessário */
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: center;
+    z-index: 1; /* Garantir que a bolinha branca esteja acima */
+}
+
+input:checked + label {
+    background: #6e27a1
+}
+
+input:checked + label::after {
+    left: calc(100% - 24px); /* Ajuste para mover a bolinha branca para a direita */
+    transform: translateX(-100%);
+}
+
+label:active::after {
+    width: 25px;
+}
+
+div#bell {
+    background-image: url('../icons/bell.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: var(--main-size-icon);
+    background-color: white;
+    width: 5%;
+    height: 50%;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+div.perfil {
+    display: flex;
+    flex-direction: row;
+    background-color: #6e27a1;
+    height: 120%;
+    width: 22%;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    margin-top: 1%;
+    margin-left: 1.5%;
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.103);
+}
+
 div#filtros {
     display: flex;
     flex-direction: row;
-    margin-top: 1.5em;
-    margin-left: 4.3em;
+    margin-top: 0.5em;
+    margin-left: 5.3em;
     justify-content: flex-start;
     align-items: center;
     gap: 1em;
@@ -199,6 +276,8 @@ p.group {
 main {
     display: flex;
     flex-direction: row;
+    width: 100%; /* 100vw - 19% da vav = 81% */
+    justify-content: space-between;
 }
 
 section#peopleCards {
@@ -211,12 +290,39 @@ section#peopleCards ul {
     list-style-type: none;
 }
 
-aside#infoCards {
-    width: 25%; /* Proporção de espaço para a barra lateral */
+aside.infoCards {
+    height: 100%;
     display: flex;
+    width: 30%;
+    margin-right: 4%;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    
 }
+
+div.cardInfo {
+    color: #6e27a1;
+    text-align: center;
+    width: 70%;
+    height: 25%;
+    border-radius: 22px;
+    margin-top: 5%;
+    background-color: white;
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.322);
+    overflow: hidden;
+}
+
+div.layoutP {
+    text-align: center;
+    color: white;
+    font-size: 0.8em;
+    background-color: #6e27a1;
+    padding: 2%;
+    border: 1px solid lightgray;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 
 .cardPerfil {
     background-color: white;
@@ -228,4 +334,23 @@ aside#infoCards {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+div.mark {
+    display: flex;
+    width: 100%;
+    margin-top: 6%;
+    margin-bottom: 4%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+div.mark > p {
+    font-size: var(--main-font-size);
+}
+
+img.logoFL {
+    width: 45%;   
 }
