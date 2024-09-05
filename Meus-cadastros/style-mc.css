@@ -1,0 +1,423 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --main-color: #6e27a1;
+    --main-font-size: 0.8em;
+    --main-size-icon: 20px 20px;
+    --main-position-icon: 10px center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+
+div#container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100%; /* Ocupar a altura total da tela */
+}
+
+nav#sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 19%; 
+    background-color: white; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+div#imgOC {
+    border-radius: 25px 0px 0px 0px;
+    background-color: var(--main-color);
+    width: 100%;
+    height: 10%; 
+}
+
+img#logoOC {
+    width: 100%; /* Ajuste a largura para ficar proporcional */
+    padding: 7%;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+#sidebar ul li.items {
+    font-size: var(--main-font-size);
+    margin: 1em;
+    color: var(--main-color);
+    width: 75%;
+    padding: 5% 2% 5% 12%;
+    cursor: pointer;
+}
+
+li#vg {
+    background-image: url('../icons/grid-dashboard.svg');
+    background-repeat: no-repeat;
+    background-position: var(--main-position-icon);
+    background-size: var(--main-size-icon);
+}
+
+li#cc {
+    background-image: url('../icons/add-box.svg');
+    background-repeat: no-repeat;
+    background-position: var(--main-position-icon);
+    background-size: var(--main-size-icon);
+}
+
+li#mc {
+    background-image: url('../icons/char-list.svg');
+    background-repeat: no-repeat;
+    background-position: var(--main-position-icon);
+    background-size: var(--main-size-icon);
+}
+
+li#rs {
+    background-image: url('../icons/insert-char.svg');
+    background-repeat: no-repeat;
+    background-position: var(--main-position-icon);
+    background-size: var(--main-size-icon);
+}
+
+li#vg:hover {
+    background-image: url('../icons/dash-white.png');
+}
+
+li#cc:hover {
+    background-image: url('../icons/add-box-white.png');
+}
+
+li#mc:hover {
+    background-image: url('../icons/patient-list.png');
+}
+
+li#rs:hover {
+    background-image: url('../icons/insert-white.png');
+}
+
+#sidebar ul li.items:hover {
+    background-color: var(--main-color); 
+    color: white;
+    border-radius: 10px;
+}
+
+#sidebar hr {
+    border: none;
+    border-top: 1px solid lightgray;
+    margin: 0;
+    width: 60%;
+}
+
+div#footerDiv {
+    background-color: var(--main-color);
+    width: 100%;
+    height: 4%;
+    margin-top: auto;
+    border-radius: 0px 0px 0px 20px;
+}
+
+div#contentMain {
+    display: flex;
+    flex-direction: column;
+    width: 80%; /* Ajustando o tamanho do main */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    margin-top: 1em;
+}
+
+input#search {
+    background-image: url('../icons/lupa.png');
+    background-repeat: no-repeat;
+    background-size: var(--main-size-icon);
+    background-position: 25% center;
+    width: 55%;
+    height: 3em;
+    padding-left: 2.5em; /* Para afastar o texto do ícone */
+    border: 2px solid rgb(240, 240, 240);
+    border-radius: 5px;
+    margin-left: 2%;
+    margin-top: 0.8%;
+}
+
+input#search:focus {
+    background-image: none;
+}
+
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label.toggle {
+    cursor: pointer;
+    width: 50px;
+    height: 27px;
+    background: rgb(185, 185, 185);
+    display: block;
+    border-radius: 100px;
+    position: relative;
+    margin-left: 2%;
+    margin-top: 1%;
+    background-image: url('../icons/brush.png');
+    background-repeat: no-repeat;
+    background-size: 19px 19px;
+    background-position: 10% center;
+}
+
+label.toggle::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 21px;
+    height: 21px;
+    background: #fff;
+    border-radius: 50px;
+    transition: 0.3s;
+    background-image: url('../icons/brush.png'); /* Opcional: Ícone adicional, se necessário */
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: center;
+    z-index: 1; /* Garantir que a bolinha branca esteja acima */
+}
+
+input:checked + label.toggle {
+    background: #6e27a1
+}
+
+input:checked + label.toggle::after {
+    left: calc(100% - 5px); /* Ajuste para mover a bolinha branca para a direita */
+    transform: translateX(-100%);
+}
+
+label.toggle:active::after {
+    width: 25px;
+}
+
+div#bell {
+    background-image: url('../icons/bell.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: var(--main-size-icon);
+    background-color: white;
+    width: 5%;
+    height: 50%;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+div.perfil {
+    display: flex;
+    flex-direction: row;
+    background-color: #6e27a1;
+    height: 10vh; 
+    width: 18vw;  
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    margin-top: 1%;
+    margin-left: 1.5%;
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.103);
+    align-items: center; 
+}
+
+
+div.fotoPerfil {
+    height: 87%; 
+    width: 25%;  
+    margin-left: 2%; 
+    margin-top: 1.5%;  
+    margin-bottom: 1.5%;
+    border-radius: 10%; 
+    overflow: hidden;
+    background-image: url('../imgs/Eduardo-Rodrigues.png'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.comando {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-left: 1em;
+    padding: 4px;
+}
+
+div.comando > p {
+    color: white;
+    font-size: 0.7em;
+}
+
+div.expand {
+    display: flex; /* Certifica-se de que o conteúdo interno seja flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 20px;
+    height: 20px;
+}
+
+div.expand img {
+    width: 100%; 
+    height: 100%;
+    margin-left: 1em;
+}
+
+
+div#filtros {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin-top: 0.7em;
+    margin-left: 5.7em;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+}
+
+div#filtros > p {
+    font-family: var(--main-font);
+    font-size: 0.7em;
+    color: var(--main-color);
+    text-align: center;
+}
+
+button#border {
+    background-image: url('../icons/recentIcon.svg');
+    background-repeat: no-repeat;
+    color: #6e27a1;
+    font-size: 0.7em;
+    background-size: 13px 13px;
+    background-position: left;
+    border: none;
+    border-radius: 10px;
+    padding: 0.1em 0.3em 0.1em 2em;
+    background-color: #ebcfff;  
+}
+
+p.group {
+    background-image: url('../icons/diversityIcon.svg');
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: left;
+    padding: 0.1em 0.3em 0.1em 2em;
+}
+
+main.analise {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+    margin-left: 2em;
+}
+
+div.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 15%;
+    border: 1px solid lightgray;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+}
+
+div.contentRight {
+    margin-left: 1em;
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5em;
+}
+
+div.contentLeft {
+    margin-right: 1em;
+}
+
+input#clear {
+    background-color: white;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 8px;
+    padding: 6px 20px;
+}
+
+input#filter {
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 8px;
+    padding: 6px 20px;
+    margin-top: 1em;
+}
+
+label.labelInfo {
+    font-size: 0.7em;
+}
+
+input#codigo {
+    width: 6vw;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid lightgray;
+}
+
+input#state {
+    width: 5vw;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid lightgray;
+}
+
+input#nome {
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid lightgray;
+}
+
+input#period {
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid lightgray;
+}
+
+div#cons1 {
+    display: flex;
+    flex-direction: column;
+}
+
+div#cons2 {
+    display: flex;
+    flex-direction: column;
+}
+
+div#cons3 {
+    display: flex;
+    flex-direction: column;
+}
+
+div#cons4 {
+    display: flex;
+    flex-direction: column;
+}

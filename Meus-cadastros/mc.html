@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meus Cadastros</title>
+        <link rel="stylesheet" href="style-mc.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    </head>
+<body>
+    <div id="container">
+        <nav id="sidebar">
+            <div id="imgOC">
+                <img id="logoOC" src="./imgLogo/logoescrita.svg" alt="logo operação-curiosidade">
+            </div>
+            <ul>
+                <li id="vg" class="items">Visão Geral</li>
+                <hr>
+                <li id="cc" class="items">Cadastrar Curiosidade</li>
+                <hr>
+                <li id="mc" class="items">Meus Cadastros</li>
+                <li id="rs" class="items">Relatórios</li>
+                <hr>
+            </ul>
+            <div id="footerDiv"></div>
+        </nav>   
+        <div id="contentMain">
+            <header>
+                <input type="text" name="search" id="search" placeholder="Pesquise Aqui">
+                <input type="checkbox" id="switch" /><label class="toggle" for="switch"></label>
+                <div id="bell">
+
+                </div>
+                <div class="perfil">
+                    <div class="fotoPerfil">
+                        
+                    </div>
+                    <div class="comando">
+                        <p>Eduardo Rodrigues</p>
+                        <p>[Administrador]</p>
+                    </div>
+                    <div class="expand">
+                        <img src="../icons/expand.png" alt="expandir">
+                    </div>
+                </div>
+            </header>
+            <div id="filtros">
+                <button id="border">Últimas cadastradas</button> 
+                <p class="group">Compartilhadas por mim</p>
+                <p class="group">Compartilhadas comigo</p>
+            </div> 
+            <main class="analise">
+                <div class="header">
+                    <div class="contentRight">
+                        <div id="cons1">
+                            <label class="labelInfo" for="codigo">Código</label>
+                            <input type="text" name="codigo" id="codigo">
+                        </div>
+                        <div id="cons2">
+                            <label class="labelInfo" for="state">Status</label>
+                            <input type="text" name="state" id="state">
+                        </div>
+                        <div id="cons3">
+                            <label class="labelInfo" for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome">
+                        </div>
+                        <div id="cons4">
+                            <label class="labelInfo" for="period">Período</label>
+                            <input type="text" name="period" id="period">
+                        </div>
+                    </div>
+                    <div class="contentLeft">
+                        <input id="clear" type="button" value="Limpar">
+                        <input id="filter" type="button" value="Filtrar">
+                    </div>
+                </div>
+            </main>
+    </div>
+</body>
+</html>
