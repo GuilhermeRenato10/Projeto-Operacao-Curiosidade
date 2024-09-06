@@ -21,7 +21,8 @@ article.cardPerfil {
     flex-direction: column;
     padding: 1.5em;
     border: 1px solid lightgray;
-    width: 100%;
+    border-radius: 18px;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -56,7 +57,7 @@ p.email {
 }
 
 div.status {
-    width: 10%;
+    width: 10vw;
     padding: 0.1em;
     border: 1px solid lightgray;
     border-radius: 15px;
@@ -73,18 +74,20 @@ div.status > p {
 
 i.arroba {
     font-family: var(--main-font);
-    font-size: 1.2em;
+    font-size: 2.5vw;
     font-weight: 500;
     color: var(--main-color);
 }
 
 p.code {
     font-family: var(--main-font);
-    font-size: 1em;
-    padding: 0.1em 0.6em;
+    font-size: 2vw;
+    padding: 1px 5px;
+    font-weight: 500;
     border: 1px solid var(--main-color);
-    border-radius: 25px;
+    border-radius: 1.5vw;
     color: var(--main-color);
+    white-space: nowrap;
 }
 
 div.footer {

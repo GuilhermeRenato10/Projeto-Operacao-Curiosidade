@@ -62,7 +62,7 @@ img#logoOC {
     margin: 1em;
     color: var(--main-color);
     width: 75%;
-    padding: 5% 2% 5% 12%;
+    padding: 2vh 3vw;
     cursor: pointer;
 }
 
@@ -258,8 +258,8 @@ div.fotoPerfil {
 div#filtros {
     display: flex;
     flex-direction: row;
-    width: 60%;
-    margin-top: 0.7em;
+    width: 40vw;
+    margin-top: 1vh;
     margin-left: 5.7em;
     justify-content: flex-start;
     align-items: center;
@@ -281,8 +281,9 @@ button#border {
     background-size: 13px 13px;
     background-position: left;
     border: none;
-    border-radius: 10px;
-    padding: 0.1em 0.3em 0.1em 2em;
+    border-radius: 12px;
+    font-weight: 500;
+    padding: 0.1em 1.5em;
     background-color: #ebcfff;  
 }
 
@@ -297,16 +298,16 @@ p.group {
 main {
     display: flex;
     flex-direction: row;
-    width: 100%; /* 100vw - 19% da vav = 81% */
+    width: 100%;
     height: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 section#peopleCards {
     display: flex;
     flex-direction: column;
-    height: 93%;
-    width: 48%;
+    height: 75vh;
+    width: 42vw;
     margin-top: 1.8em;
     margin-left: 5.8em;
 }
@@ -315,7 +316,7 @@ section#peopleCards ul {
     list-style-type: none;
     height: 450px;
     overflow-y: auto;
-    padding-right: 40px;
+    padding-right: 60px;
 }
 
 section#peopleCards ul::-webkit-scrollbar {
@@ -337,6 +338,8 @@ section#peopleCards ul::-webkit-scrollbar-thumb:hover {
 
 iframe.iframeBorder {
     border: none;
+    width: 37vw;
+    height: 30vh;
 }
 
 img.iconC {
