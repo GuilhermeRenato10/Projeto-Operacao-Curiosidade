@@ -63,7 +63,7 @@ img#logoOC {
     margin: 1em;
     color: var(--main-color);
     width: 75%;
-    padding: 5% 2% 5% 12%;
+    padding: 2vh 2vw 2vh 4vw;
     cursor: pointer;
 }
 
@@ -271,9 +271,9 @@ div.comando > p {
 }
 
 div.expand {
-    display: flex; /* Certifica-se de que o conteúdo interno seja flexível */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     width: 20px;
     height: 20px;
 }
@@ -333,12 +333,12 @@ main.analise {
     margin-left: 2em;
 }
 
-div.header {
+div.informacoes {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 72vw;
     height: 15%;
     border: 1px solid lightgray;
     background-color: rgb(245, 245, 245);
@@ -402,22 +402,173 @@ input#period {
     border: 1px solid lightgray;
 }
 
-div#cons1 {
+div.cons {
     display: flex;
     flex-direction: column;
 }
 
-div#cons2 {
+div.conteudoGeral {
     display: flex;
     flex-direction: column;
 }
 
-div#cons3 {
+div.pesquisa {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 72vw;
+    height: 7vh;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 4px;
+    margin-top: 1vh;
+    margin-bottom: 0.4vh;
+    padding: 1.2vw;
 }
 
-div#cons4 {
+div.code {
+    display: flex;
+    flex-direction: row;
+    width: 8vw;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.7vw;
+}
+
+p.textLayout {
+    font-family: var(--main-font);
+    font-size: var(--main-font-size);
+}
+
+img.arrowDown {
+    height: 2vh;
+}
+
+div.name {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 15vw;
+    align-items: center;
+    gap: 0.7vw;
+}
+
+div.email {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 20vw;
+    align-items: center;
+    gap: 0.7vw;
+}
+
+div.data {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 15vw;
+    align-items: center;
+    gap: 0.7vw;
+}
+
+div.situacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 5vw;
+    align-items: center;
+    gap: 0.7vw;
+}
+
+div.especificacoes {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 0.1vh;
+}
+
+div.infoUsers {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 72vw;
+    height: 8vh;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 0.1vh;
+    padding: 1.2vw;
+}
+
+p.textLayout2 {
+    font-family: var(--main-font);
+    font-size: var(--main-font-size);
+    font-weight: 300;
+}
+
+p.situationLayout {
+    font-family: var(--main-font);
+    font-size: 0.7em;
+    color: green;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    padding: 0 0.7vw;
+    background-color: rgb(207, 255, 207);
+}
+
+div.paginacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 72vw;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    margin-top: 1vh;
+    padding: 0 1vw;
+}
+
+div.pageRight {
+    display: flex;
+    gap: 1vw;
+}
+
+div.pageLeft {
+    display: flex;
+    flex-flow: row;
+    align-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+p.subtitle {
+    font-size: 0.7em;
+}
+
+input#page {
+    width: 3.5vw;
+    height: 2.5vh;
+}
+
+img.transp {
+    width: 1.2vw;
+    height: 1.2vw;
+    border: 1px solid lightgray;
+    color: lightgray;
+    border-radius: 5px;
+}
+
+img.purple {
+    width: 1.2vw;
+    height: 2vh;
+    border-radius: 5px;
+    border: 1px solid #6e27a1;
+    background-color: #6e27a1;
+}
+
+div.logoForLogic > img {
+    width: 5vw;
+    height: 10vh;
 }
