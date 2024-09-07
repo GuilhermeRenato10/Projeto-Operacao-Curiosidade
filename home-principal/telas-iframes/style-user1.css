@@ -16,14 +16,33 @@
     box-sizing: border-box;
 }
 
+
 article.cardPerfil {
     display: flex;
     flex-direction: column;
-    padding: 1.5em;
+    padding: 1em;
     border: 1px solid lightgray;
     border-radius: 18px;
-    width: 100vw;
-    height: 100vh;
+    width: 92vw;
+    margin-bottom: 1em;
+    box-shadow: 6px 5px 20px -12px gray;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main-color); /* Cor da barra de rolagem */
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 div.header {
@@ -151,7 +170,6 @@ div.complemento > p {
     font-size: var(--main-font-size);
     color: rgb(172, 168, 168);
 }
-
 
 div.sde {
     display: flex;
