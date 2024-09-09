@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações</title>
+    <link rel="stylesheet" href="style-config.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+</head>
+<body>
+    <div id="container">
+        <nav id="sidebar">
+            <div id="imgOC">
+                <img id="logoOC" src="./imgLogo/logoescrita.svg" alt="logo operação-curiosidade">
+            </div>
+            <ul>
+                <li id="vg" class="items">Visão Geral</li>
+                <hr>
+                <li id="cc" class="items">Cadastrar Curiosidade</li>
+                <hr>
+                <li id="mc" class="items">Meus Cadastros</li>
+                <li id="rs" class="items">Relatórios</li>
+                <hr>
+            </ul>
+            <div id="footerDiv"></div>
+        </nav>
+        
+        <div id="contentMain">
+            <header>
+                <input type="text" name="search" id="search" placeholder="Pesquise Aqui">
+                <input type="checkbox" id="switch">
+                <label class="toggle" for="switch"></label>
+                
+                <div id="bell"></div>
+                
+                <div class="perfil">
+                    <div class="fotoPerfil"></div>
+                    <div class="comando">
+                        <p>Eduardo Rodrigues</p>
+                        <p>[Administrador]</p>
+                    </div>
+                    <div class="expand">
+                        <img src="../icons/expand.png" alt="expandir">
+                    </div>
+                </div>
+            </header>
+            <div id="links">
+                <a class="perfilLink" href="#">Meu Perfil</a>
+                <a class="perfilLink" href="#">Opções de Compartilhamento</a>
+                <a class="perfilLink" href="#">Gerenciar Usuários</a>
+                <a class="perfilLink" href="#">Trilha de Auditoria</a>
+            </div>
+            <main>
+                <iframe id="dadosIframe" src="./iframes/dados.html" frameborder="0" width="70%" height="600px"></iframe>
+                <aside>
+                    
+                </aside>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

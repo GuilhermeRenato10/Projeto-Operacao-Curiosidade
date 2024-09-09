@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --main-color: #6e27a1;
+    --main-font-size: 0.8em;
+    --main-size-icon: 20px 20px;
+    --main-position-icon: 10px center;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--main-font);
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+div#seusDados {
+    width: 65%;
+    margin-top: 1.5%;
+    margin-left: 9%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+div#seusDados > h2 {
+    color: var(--main-color);
+    font-size: 1em;
+}
+
+label.labelLayout {
+    color: var(--main-color);
+    font-size: var(--main-font-size);
+}
+
+input.large {
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    padding: 5px;
+    width: 100%;
+}
+
+input.short {
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    width: 50%;
+    padding: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    margin-top: 1%;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: lightgray; /* Cor da barra de rolagem */
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
