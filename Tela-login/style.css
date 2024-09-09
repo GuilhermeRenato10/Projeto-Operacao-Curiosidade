@@ -139,6 +139,14 @@ input[type="submit"] {
 
 /* --------------------------------------------------------------------------------------------------------- */
 
+#additional-info {
+    max-width: 900px;
+}
+
+.autoplay li img {
+    margin: 0 auto;
+}
+
 div.info-content {
     display: flex;
     flex-direction: column;
@@ -155,7 +163,7 @@ img#onionBig {
 p.info-text {
     font-size: 0.9em;
     margin-top: 2vw;
-    text-align: justify;
+    text-align: center;
     font-style: italic;
     font-weight: 400;
 }

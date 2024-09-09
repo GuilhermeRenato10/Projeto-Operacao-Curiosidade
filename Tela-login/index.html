@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Login</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 
 <body>
@@ -38,20 +43,50 @@
         </div>
 
         <section id="additional-info">
-                <div class="info-content">
+               <!-- <div class="info-content">
                     <img id="onionBig" src="../imgs/big_onion_facts_and_data.svg" alt="Onion-facts">
                     <p class="info-text">"A primeira camada da cebola é sobre conhecer o colaborador
                         além do cargo, revelando suas <span class="pColor">necessidades</span> e <span class="pColor">objetivos pessoais</span>."
                     </p>
-                    <div class="mark">
-                        <p>Powered by</p>
-                        <img class="logoFL" src="../imgs/forlogic logo.svg" alt="logo">
-                    </div>
+                    
+                </div> --> 
+                <ul class="autoplay">
+                    <li>
+                      <img src="../imgs/big_onion_facts_and_data.svg" alt="" />
+                      <p class="info-text">"A primeira camada da cebola é sobre conhecer o colaborador
+                        além do cargo, revelando suas <span class="pColor">necessidades</span> e <span class="pColor">objetivos pessoais</span>."
+                    </p>
+                    </li>
+                    <li>
+                      <img src="../imgs/big_onion_interests.svg" alt="" />
+                      <p class="info-text">"O desafio é desvendar os interesses e expectativas reais do colaborador,
+                        indo além da superfície para entender o significado por trás deles."
+                      </p>
+                    </p>
+                    </li>
+                    <li>
+                      <img src="../imgs/big_onion_feelings.svg" alt="" />
+                      <p class="info-text">"Atingir essa camada significa ir além do técnico, explorando a esfera humana para conhecer
+                        os sentimentos do colaborados, entendendo quem ele realmente é. Isso ajuda a fortalecer laços e a fomentar um comprometimento
+                        genuíno."
+                      </p>
+                    </li>
+                    <li>
+                        <img src="../imgs/big_onion_values.svg" alt="">
+                        <p class="info-text">"Aprofundar o relacionamento transforma o cumprimento em compromisso, revelando a essência
+                            do colaborador e o que o move, estabelecendo assim o mais forte ponto de conexão."
+                        </p>
+                    </li>
+                  </ul>
+                  <div class="mark">
+                    <p>Powered by</p>
+                    <img class="logoFL" src="../imgs/forlogic logo.svg" alt="logo">
                 </div>
         </section>
 
     </main>
     <script src="script-login.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 
 </html>
