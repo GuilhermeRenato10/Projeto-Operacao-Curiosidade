@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trilha de Auditoria</title>
+        <link rel="stylesheet" href="style-trilha.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    </head>
+<body>
+    <div id="container">
+        <nav id="sidebar">
+            <div id="imgOC">
+                <img id="logoOC" src="./imgLogo/logoescrita.svg" alt="logo operação-curiosidade">
+            </div>
+            <ul>
+                <li id="vg" class="items">Visão Geral</li>
+                <hr>
+                <li id="cc" class="items">Cadastrar Curiosidade</li>
+                <hr>
+                <li id="mc" class="items">Meus Cadastros</li>
+                <li id="rs" class="items">Relatórios</li>
+                <hr>
+            </ul>
+            <div id="footerDiv"></div>
+        </nav>   
+        <div id="contentMain">
+            <header>
+                <input type="text" name="search" id="search" placeholder="Pesquise Aqui">
+                <input type="checkbox" id="switch" /><label class="toggle" for="switch"></label>
+                <div id="bell">
+
+                </div>
+                <div class="perfil">
+                    <div class="fotoPerfil">
+                        
+                    </div>
+                    <div class="comando">
+                        <p>Eduardo Rodrigues</p>
+                        <p>[Administrador]</p>
+                    </div>
+                    <div class="expand">
+                        <img src="../icons/expand.png" alt="expandir">
+                    </div>
+                </div>
+            </header> 
+            <div id="links">
+                <a class="perfilLink" href="./configs.html">Meu Perfil</a>
+                <a class="perfilLink" href="#">Opções de Compartilhamento</a>
+                <a class="perfilLink" href="#">Gerenciar Usuários</a>
+                <a class="perfilLink" href="./trilha.html">Trilha de Auditoria</a>
+            </div>
+            <main class="analise">
+                <div class="informacoes">
+                    <div class="contentRight">
+                        <div class="cons">
+                            <label class="labelInfo" for="iten">Item</label>
+                            <select id="iten">
+                                <option value="org">Organizacional</option>
+                            </select>
+                        </div>
+                        <div class="cons">
+                            <label class="labelInfo" for="local">Local</label>
+                            <select id="local">
+                                <option value="mc">Meus Cadastros</option>
+                                <option value="rs">Relatórios</option>
+                                <option value="config">Configurações</option>
+                                <option value="cad">Cadastro</option>
+                            </select>
+                        </div>
+                        <div class="cons">
+                            <label class="labelInfo" for="user">Usuário</label>
+                            <select id="user">
+                                <option value="er">@edurdgs</option>
+                            </select>
+                        </div>
+                        <div class="cons">
+                            <label class="labelInfo" for="period">Período</label>
+                            <input type="text" name="period" id="period">
+                        </div>
+                    </div>
+                    <div class="contentLeft">
+                        <button class="bMake">Limpar</button>
+                        <button class="bMake">Filtrar</button>
+                    </div>
+                </div>
+                <div class="conteudoGeral">
+                    <div class="pesquisa">
+                        <div id="espacamentoLocal">
+                                <p class="textLayout">Local</p>
+                                <img class="arrowDown" src="../icons/tp.svg" alt="tres-pontos">
+                        </div>
+                        <div id="espacamentoData">
+                            <p class="textLayout">Data</p>
+                            <img class="arrowDown" src="../icons/tp.svg" alt="tres-pontos">
+                        </div>
+                        <div id="espacamentoUser">
+                            <p class="textLayout">Usuário</p>
+                            <img class="arrowDown" src="../icons/tp.svg" alt="tres-pontos">
+                        </div>
+                        <div id="espacamentoEvent">
+                            <p class="textLayout">Evento</p>
+                            <img class="arrowDown" src="../icons/tp.svg" alt="tres-pontos">
+                        </div>
+                        <div id="espacamentoIten">
+                            <p class="textLayout">Item</p>
+                            <img class="arrowDown" src="../icons/tp.svg" alt="tres-pontos">
+                        </div>
+                    </div>
+                </div>
+                <div class="especificacoes">
+                    <div class="infoUsers">
+                        <div class="typeIten">
+                            <p class="textLayout2">Meus Cadastros</p>
+                        </div>
+                        <div class="typeIten">
+                            <p class="textLayout2">10 de set. de 2024 09:30:45</p>
+                        </div>
+                        <div class="typeIten">
+                            <p class="textLayout2">@edurdgs</p>
+                        </div>
+                        <div class="typeIten">
+                            <p class="textLayout2">Operação removida</p>
+                        </div>
+                        <div class="typeIten">
+                            <p class="textLayout2">Organizacional</p>
+                        </div>
+                    </div>
+                    <div class="infoUsers">
+                        <div class="typeIten">
+                            <p class="textLayout2">Relatórios</p>
+                        </div>
+                        <div class="typeIten">
+                            <p class="textLayout2">10 de set. de 2024 09:38:41</p>
+                        </div>
+                        <div class="typeIten">
+                            <p class="textLayout2">@edurdgs</p>
+                        </div>
+                        <div class="typeIten">
+                            <p class="textLayout2">Relatório baixado</p>
+                        </div>
+                        <div class="typeIten">
+                            <p class="textLayout2">Organizacional</p>
+                        </div>
+                    </div>
+                    <div class="infoUsers">
+                        <div class="typeIten">
+                            <p class="textLayout2">Configurações</p>
+                        </div>
+                        <div class="typeIten">
+                            <p class="textLayout2">10 de set. de 2024 09:39:17</p>
+                        </div>
+                        <div class="typeIten">
+                            <p class="textLayout2">@edurdgs</p>
+                        </div>
+                        <div class="typeIten">
+                            <p class="textLayout2">Usuário cadastrado</p>
+                        </div>
+                        <div class="typeIten">
+                            <p class="textLayout2">Organizacional</p>
+                        </div>
+                    </div>
+                    <div class="infoUsers">
+                        <div class="typeIten">
+                            <p class="textLayout2">Cadastro</p>
+                        </div>
+                        <div class="typeIten">
+                            <p class="textLayout2">10 de set. de 2024 09:40:53</p>
+                        </div>
+                        <div class="typeIten">
+                            <p class="textLayout2">@edurdgs</p>
+                        </div>
+                        <div class="typeIten">
+                            <p class="textLayout2">Operação cadastrada</p>
+                        </div>
+                        <div class="typeIten">
+                            <p class="textLayout2">Organizacional</p>
+                        </div>
+                    </div>
+                    <div class="infoUsers">
+                        <div class="typeIten">
+                            <p class="textLayout2">Configurações</p>
+                        </div>
+                        <div class="typeIten">
+                            <p class="textLayout2">10 de set. de 2024 09:42:00</p>
+                        </div>
+                        <div class="typeIten">
+                            <p class="textLayout2">@edurdgs</p>
+                        </div>
+                        <div class="typeIten">
+                            <p class="textLayout2">Usuário alterado</p>
+                        </div>
+                        <div class="typeIten">
+                            <p class="textLayout2">Organizacional</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="paginacao">
+                    <div class="pageRight">
+                        <p class="subtitle">Itens por página</p>
+                        <input type="number" name="page" id="page">
+                    </div>
+                    <div class="pageLeft">
+                        <p class="subtitle">Página 1 de 10</p>
+                        <img class="transp" src="../icons/first page d3.svg" alt="">
+                        <img class="transp" src="../icons/chevron d3.svg" alt="">
+                        <img class="purple" src="../icons/chevron right.svg" alt="">
+                        <img class="purple" src="../icons/last page.svg" alt="">
+                    </div>
+                </div>
+                <div id="logoFl">
+                    <p>Powered by</p>
+                    <img src="../imgs/forlogic logo.svg" alt="logo-Forlogic">
+                </div>
+            </main>
+    </div>
+</body>
+</html>
