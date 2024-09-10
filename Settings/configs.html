@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Configurações</title>
     <link rel="stylesheet" href="style-config.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
 </head>
+
 <body>
     <div id="container">
         <nav id="sidebar">
@@ -24,15 +27,15 @@
             </ul>
             <div id="footerDiv"></div>
         </nav>
-        
+
         <div id="contentMain">
             <header>
                 <input type="text" name="search" id="search" placeholder="Pesquise Aqui">
                 <input type="checkbox" id="switch">
                 <label class="toggle" for="switch"></label>
-                
+
                 <div id="bell"></div>
-                
+
                 <div class="perfil">
                     <div class="fotoPerfil"></div>
                     <div class="comando">
@@ -50,13 +53,32 @@
                 <a class="perfilLink" href="#">Gerenciar Usuários</a>
                 <a class="perfilLink" href="#">Trilha de Auditoria</a>
             </div>
-            <main>
+            <main id="contentInfos">
                 <iframe id="dadosIframe" src="./iframes/dados.html" frameborder="0" width="70%" height="600px"></iframe>
-                <aside>
-                    
+                <aside id="additionalInfos">
+                    <h2 class="subtitles">Sua Foto</h2>
+                    <div id="infosImage">
+                        <img src="../icons/person.svg" alt="sua-foto">
+                        <div id="update">
+                                <button class="layoutButton"><img class="imgUp" src="../icons/arrow-update.svg" alt=""><strong>Atualize sua imagem</strong></button>
+                                <button id="trashUp" class="layoutButton"><img class="imgUp" src="../icons/trash.png" alt=""><strong>Remover imagem</strong></button>
+                        </div>
+                    </div>
+                    <h2 class="subtitles">Altere sua senha</h2>
+                    <div id="infosPassword">
+                        <label class="textLabel" for="currentPass">Senha Atual</label>
+                        <input class="layoutPass" type="password" name="currentPass" id="currentPass">
+                        <label class="textLabel" for="newPass">Nova Senha</label>
+                        <input class="layoutPass" type="password" name="newPass" id="newPass">
+                    </div>
+                    <div id="admin">
+                        <input type="checkbox" name="adm" id="adm"><label for="adm">Administrador</label></input>
+                    </div>
+                    <button id="save"><img src="../icons/save as.svg" alt="">Salvar</button>
                 </aside>
             </main>
         </div>
     </div>
 </body>
+
 </html>

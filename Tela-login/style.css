@@ -125,7 +125,7 @@ div.bottom-submit {
     padding: 0px;
 }
 
-input[type="submit"] {
+button[type="submit"] {
     text-align: center;
     margin-top: 5vh;
     font-weight: bolder;

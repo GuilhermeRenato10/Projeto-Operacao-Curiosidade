@@ -242,7 +242,6 @@ div.perfil {
     align-items: center; 
 }
 
-
 div.fotoPerfil {
     height: 87%; 
     width: 25%;  
@@ -299,4 +298,106 @@ div#links {
     text-decoration: none;
     color: #6e27a1;
     font-size: var(--main-font-size);
+}
+
+main#contentInfos{
+    display: flex;
+    flex-direction: row;
+}
+
+aside#additionalInfos {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /*Preenche todo espaço faltante no main*/
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+aside#additionalInfos > h2 {
+    color: var(--main-color);
+    font-size: 1.3em;
+    margin-bottom: 2%;
+}
+
+div#infosImage {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 7%;
+}
+
+div#infosImage > img {
+    height: 60px;
+    width: 70px;
+    background-color: #e7c7fe;
+    border: 1px solid #b59bc7;
+    border-radius: 4px;
+}
+
+button.layoutButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 1px 10px;
+}
+
+button#trashUp {
+    width: 90%;
+}
+
+img.imgUp {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+div#update {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 4%;
+}
+
+div#infosPassword {
+    display: flex;
+    flex-direction: column;
+    height: 28%;
+    margin-top: 3%;
+}
+
+label.textLabel {
+    color: #6e27a1;
+    font-size: 0.9em;
+    font-weight: 530;
+}
+
+input.layoutPass {
+    width: 80%;
+    height: 35%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    margin-bottom: 4%;
+}
+
+div#admin {
+    display: flex;
+    flex-direction: row;
+}
+
+button#save {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 10%;
+    font-size: 1.2em;
+    gap: 2%;
+    background-color: var(--main-color);
+    color: white;
+    font-family: 'Poppins';
+    border: none;
+    border-radius: 8px;
+    margin-top: 8%;
 }
