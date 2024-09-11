@@ -295,6 +295,41 @@ div#links {
     gap: 3%;
 }
 
+div.myprofile {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 6vw;
+}
+
+div.mpShare {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+    width: 12vw;
+}
+
+div.pEng {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+    width: 8vw;
+}
+
+div.pSearch {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 11vw;
+    background-color: #e7c7fe;
+    border-radius: 12px;
+    padding: 3px 10px;
+}
+
+img.imgMp {
+    height: 20px;
+}
+
 .perfilLink {
     text-decoration: none;
     color: #6e27a1;

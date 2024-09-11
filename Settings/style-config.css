@@ -300,6 +300,41 @@ div#links {
     font-size: var(--main-font-size);
 }
 
+div.myprofile {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 7vw;
+    background-color: #e7c7fe;
+    border-radius: 12px;
+    padding: 3px 10px;
+}
+
+div.mpShare {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+    width: 12vw;
+}
+
+div.pEng {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+    width: 8vw;
+}
+
+div.pSearch {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 8vw;
+}
+
+img.imgMp {
+    height: 20px;
+}
+
 main#contentInfos{
     display: flex;
     flex-direction: row;
@@ -308,7 +343,7 @@ main#contentInfos{
 aside#additionalInfos {
     display: flex;
     flex-direction: column;
-    flex: 1; /*Preenche todo espaço faltante no main*/
+    flex: 1;   /*Preenche todo espaço faltante no main*/
     margin-left: 2%;
     margin-top: 2%;
 }
