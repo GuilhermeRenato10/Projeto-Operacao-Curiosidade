@@ -155,7 +155,7 @@ input#search {
     padding-left: 2.5em; /* Para afastar o texto do ícone */
     border: 2px solid rgb(240, 240, 240);
     border-radius: 5px;
-    margin-left: 2%;
+    margin-left: 3%;
     margin-top: 0.8%;
 }
 
@@ -324,8 +324,8 @@ p.group {
 }
 
 main.analise {
-    width: 100%;
-    height: 80%;
+    width: 90%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     margin-top: 1.3em;
@@ -343,7 +343,7 @@ div.pesquisa {
     justify-content: flex-start;
     align-items: center;
     width: 72vw;
-    height: 7vh;
+    height: 6vh;
     border: 1px solid lightgray;
     background-color: white;
     border-radius: 4px;
@@ -399,6 +399,7 @@ div.data {
 
 div.especificacoes {
     display: flex;
+    height: 100%;
     flex-direction: column;
     justify-content: flex-start;
     margin-top: 0.1vh;
@@ -410,7 +411,7 @@ div.infoUsers {
     justify-content: flex-start;
     align-items: center;
     width: 72vw;
-    height: 8vh;
+    height: 7vh;
     border: 1px solid lightgray;
     background-color: white;
     border-radius: 8px;
@@ -424,67 +425,23 @@ p.textLayout2 {
     font-weight: 300;
 }
 
-p.situationLayout {
-    font-family: var(--main-font);
-    font-size: 0.7em;
-    color: green;
-    border: 1px solid lightgrey;
-    border-radius: 8px;
-    padding: 0 0.7vw;
-    background-color: rgb(207, 255, 207);
-}
 
-div.paginacao {
+div#logoFl {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    margin-top: 2%;
     width: 72vw;
-    border: 1px solid lightgray;
-    border-radius: 8px;
-    margin-top: 1vh;
-    padding: 0 1vw;
+    gap: 1%;
 }
 
-div.pageRight {
-    display: flex;
-    gap: 1vw;
+div#logoFl > p {
+    font-size: var(--main-font-size);
 }
 
-div.pageLeft {
-    display: flex;
-    flex-flow: row;
-    align-content: center;
-    align-items: center;
-    gap: 1vw;
+div#logoFl > img {
+    width: 10vw;
 }
 
-p.subtitle {
-    font-size: 0.7em;
-}
 
-input#page {
-    width: 3.5vw;
-    height: 2.5vh;
-}
 
-img.transp {
-    width: 1.2vw;
-    height: 1.2vw;
-    border: 1px solid lightgray;
-    color: lightgray;
-    border-radius: 5px;
-}
-
-img.purple {
-    width: 1.2vw;
-    height: 2vh;
-    border-radius: 5px;
-    border: 1px solid #6e27a1;
-    background-color: #6e27a1;
-}
-
-div.logoForLogic > img {
-    width: 5vw;
-    height: 10vh;
-}
