@@ -367,6 +367,8 @@ input#clear {
 input#filter {
     background-color: var(--main-color);
     color: white;
+    border: none;
+    width: 5vw;
     border-radius: 8px;
     padding: 6px 20px;
     margin-top: 1em;
@@ -545,6 +547,7 @@ div.pageLeft {
 
 p.subtitle {
     font-size: 0.7em;
+    text-align: center;
 }
 
 input#page {

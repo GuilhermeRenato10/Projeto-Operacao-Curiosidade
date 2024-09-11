@@ -20,6 +20,7 @@ body {
 body, html {
     height: 100%;
     width: 100%;
+    overflow: hidden ;
 }
 
 
@@ -27,7 +28,9 @@ div#container {
     display: flex;
     flex-direction: row;
     width: 100vw;
-    height: 100%; /* Ocupar a altura total da tela */
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
 }
 
 nav#sidebar {
@@ -438,12 +441,8 @@ p.stateColumn {
     width: 5%;
     margin-left: 2%;
 }
-div.layoutP {
-    width: 6%;
-}
 
-p#statusLayout1 {
-    font-family: var(--main-font);
+p#statusLayout1, p#statusLayout2, p#statusLayout3, p#statusLayout4, p#statusLayout5 {
     font-size: 0.7em;
     color: green;
     text-align: center;
@@ -451,6 +450,17 @@ p#statusLayout1 {
     border-radius: 8px;
     padding: 0px 3px;
     background-color: rgb(207, 255, 207);
+} 
+
+p#statusLayoutRed {
+    font-family: var(--main-font);
+    font-size: 0.7em;
+    color: red;
+    text-align: center;
+    border: 1px solid rgb(255, 104, 104);
+    border-radius: 8px;
+    padding: 0px 3px;
+    background-color: rgb(252, 200, 200);
 }
 
 p.typeColumn {
@@ -459,10 +469,26 @@ p.typeColumn {
     margin-left: 7%;
 }
 
+p#operator1, p#operator2, p#operator3, p#operator4, p#operator5 {
+    color: white;
+    background-color: #6e27a171;
+    border: 1px solid var(--main-color);
+    border-radius: 20px;
+    text-align: center;
+}
+
+p#admin1 {
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 20px;
+    text-align: center;
+}
+
 img.imgArrow {
     width: 15px;
     height: 15px;
 }
+
 
 div.gerenciamento {
     display: flex;
@@ -474,6 +500,7 @@ div.gerenciamento {
 }
 
 button.details {
+    margin-left: 2%;
     display: flex;
     align-items: center;
     background-color: var(--main-color);
@@ -488,4 +515,74 @@ button.details {
 img.imgTp {
     color: white;
     height: 15px;
+}
+
+div.paginacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    margin-top: 1vh;
+    padding: 0 1vw;
+}
+
+div.pageRight {
+    display: flex;
+    gap: 1vw;
+}
+
+div.pageLeft {
+    display: flex;
+    flex-flow: row;
+    align-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+p.subtitle {
+    font-size: 0.7em;
+}
+
+input#page {
+    width: 3.5vw;
+    height: 2.5vh;
+}
+
+img.transp {
+    width: 1.2vw;
+    height: 1.2vw;
+    border: 1px solid lightgray;
+    color: lightgray;
+    border-radius: 5px;
+}
+
+img.purple {
+    width: 1.2vw;
+    height: 1.2vw;
+    border: 1px solid lightgray;
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 5px;
+}
+
+div#logoFl {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 2%;
+    width: 100%;
+    gap: 1%;
+}
+
+div#logoFl > p {
+    font-size: var(--main-font-size);
+}
+
+div#logoFl > img {
+    width: 10vw;
 }
