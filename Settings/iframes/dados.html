@@ -9,31 +9,76 @@
 </head>
 <body>
         <div id="seusDados">
-            <h2>Seus Dados</h2>
-            <form>
-                <label class="labelLayout" for="nome">Nome</label>
-                <input class="large padrao" type="text" name="nome" id="nome">
-                <label class="labelLayout" for="age">Idade</label>
-                <input class="short padrao" type="number" name="age" id="age">
-                <label class="labelLayout" for="tel">Telefone</label>
-                <input class="short padrao" type="number" name="tel" id="tel">
-                <label class="labelLayout" for="email">E-mail</label>
-                <input class="large padrao" type="text" name="email" id="email">
-                <label class="labelLayout" for="nUser">Nome de Usuário</label>
-                <input class="short padrao" type="text" name="nUser" id="nUser">
-                <label class="labelLayout" for="dataNasc">Data de Nascimento</label>
-                <input class="short padrao" type="date" name="dataNasc" id="dataNasc">
-                <label class="labelLayout" for="estCivil">Estado Civil</label>
-                <input class="short padrao" type="text" name="estCivil" id="estCivil">
-                <label class="labelLayout" for="address">Endereço</label>
-                <input class="large padrao" type="text" name="address" id="address">
-                <label class="labelLayout" for="job">Profissão</label>
-                <input class="large padrao" type="text" name="job" id="job">
-                <label class="labelLayout" for="position">Cargo</label>
-                <input class="large padrao" type="text" name="position" id="position">
-                <label class="labelLayout" for="acad">Formação Acadêmica</label>
-                <input class="large padrao" type="text" name="acad" id="acad">
-            </form>
+                    <h2>Seus Dados</h2>
+                    <form id="formInfos">
+                        <div id="nie">
+                            <div class="labelSob">
+                                <label class="labelLayout" for="nome">Nome</label>
+                                <input class="padrao" type="text" name="nome" id="nome">
+                            </div>
+                            <div class="labelSob">
+                                <label class="labelLayout" for="age">Idade</label>
+                                <input class="padrao" type="number" name="age" id="age">
+                            </div>
+                            <div class="labelSob">
+                                <label class="labelLayout" for="email">E-mail</label>
+                                <input class="padrao" type="text" name="email" id="email">
+                            </div>
+                        </div>
+                        <div id="nde">
+                            <div class="labelSob">
+                                <label class="labelLayout" for="nUser">Nome de Usuário</label>
+                                <input class="padrao" type="text" name="nUser" id="nUser">
+                            </div>
+                            <div class="labelSob">
+                                <label class="labelLayout" for="dataNasc">Data de Nascimento</label>
+                                <input class="padrao" type="date" name="dataNasc" id="dataNasc">
+                            </div>
+                            <div class="labelSob">
+                                <label class="labelLayout" for="estCivil">Estado Civil</label>
+                                <input class="padrao" type="text" name="estCivil" id="estCivil">
+                            </div>
+                        </div>
+                        <div id="telEnd">
+                            <div class="labelSob">
+                                <label class="labelLayout" for="tel">Telefone</label>
+                                <input class="padrao" type="number" name="tel" id="tel">
+                            </div>
+                            <div class="labelSob">
+                                <label class="labelLayout" for="address">Endereço</label>
+                                <input class="padrao" type="text" name="address" id="address">
+                            </div>
+                        </div>
+                        <div id="pcf">
+                            <div class="labelSob">
+                                <label class="labelLayout" for="job">Profissão</label>
+                                <input class="padrao" type="text" name="job" id="job">
+                            </div>
+                            <div class="labelSob">
+                                <label class="labelLayout" for="position">Cargo</label>
+                                <input class="padrao" type="text" name="position" id="position">
+                            </div>
+                            <div class="labelSob">
+                                <label class="labelLayout" for="acad">Formação Acadêmica</label>
+                                <input class="padrao" type="text" name="acad" id="acad">
+                            </div>
+                        </div>
+                    </form>
+        </div>
+        <div class="feelings">
+            <h3><img src="/icons/school.svg" alt="">Interesses</h3>
+            <p>Escreva no campo abaixo e pressione a tecla <strong>Enter</strong></p>
+            <textarea class="areaPadrao" name="feel" id="feel"></textarea>
+        </div>
+        <div class="feelings">
+            <h3>Sentimentos</h3>
+            <p>Escreva no campo abaixo e pressione a tecla <strong>Enter</strong></p>
+            <textarea class="areaPadrao" name="feel" id="feel"></textarea>
+        </div>
+        <div class="feelings">
+            <h3>Valores</h3>
+            <p>Escreva no campo abaixo e pressione a tecla <strong>Enter</strong></p>
+            <textarea class="areaPadrao" name="feel" id="feel"></textarea>
         </div>
 </body>
 </html>

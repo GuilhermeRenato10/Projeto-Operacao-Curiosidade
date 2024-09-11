@@ -24,14 +24,16 @@ body, html {
 }
 
 div#seusDados {
+    display: flex;
+    flex-flow: row wrap;
     width: 65%;
     margin-top: 3%;
     margin-left: 9%;
 }
 
-form {
+form#formInfos {
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
 }
 
 div#seusDados > h2 {
@@ -40,27 +42,46 @@ div#seusDados > h2 {
     margin-bottom: 2%;
 }
 
+div.labelSob {
+    display: flex;
+    flex-direction: column;
+}
+
+div#nie, div#nde, div#telEnd, div#pcf {
+    display: flex;
+    gap: 2%;
+}
+
+input#nome, input#email, input#acad {
+    width: 40vw;
+}
+
+input#age {
+    width: 5vw;
+}
+
+input#nUser, input#job {
+    width: 20vw;
+}
+
+input#dataNasc, input#estCivil, input#tel, input#position, input#acad {
+    width: 32.5vw;
+}
+
+input#address {
+    width: 54vw;
+}
+
 label.labelLayout {
     color: var(--main-color);
     font-size: var(--main-font-size);
 }
 
-input.large {
-    border-radius: 5px;
-    border: 1px solid lightgrey;
-    padding: 5px;
-    width: 100%;
-}
-
-input.short {
-    border-radius: 5px;
-    border: 1px solid lightgray;
-    width: 50%;
-    padding: 5px;
-}
-
 input.padrao {
     margin-bottom: 2%;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 5px;
 }
 
 ::-webkit-scrollbar {
@@ -81,3 +102,26 @@ input.padrao {
     background: #555;
 }
 
+div.feelings {
+    display: flex;
+    flex-direction: column;
+    margin-left: 9%;
+}
+
+div.feelings > h3 {
+    color: var(--main-color);
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-top: 1.5%;
+    margin-bottom: 2%;
+}
+
+div.feelings > p {
+    font-size: var(--main-font-size);
+}
+
+textarea.areaPadrao {
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    height: 17vh;
+}
