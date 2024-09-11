@@ -297,42 +297,42 @@ div#links {
 .perfilLink {
     text-decoration: none;
     color: #6e27a1;
-    font-size: var(--main-font-size);
+    font-size: 0.7em;
 }
 
 div.myprofile {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 7vw;
     background-color: #e7c7fe;
     border-radius: 12px;
-    padding: 3px 10px;
+    padding: 1px 8px;
 }
 
 div.mpShare {
     display: flex;
     align-items: center;
     justify-content: space-around;    
-    width: 12vw;
+    width: 15vw;
 }
 
 div.pEng {
     display: flex;
     align-items: center;
     justify-content: space-around;    
-    width: 8vw;
+    width: 10vw;
 }
 
 div.pSearch {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 8vw;
+    width: 10vw;
 }
 
 img.imgMp {
-    height: 20px;
+    height: 15px;
 }
 
 main#contentInfos{

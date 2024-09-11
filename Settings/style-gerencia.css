@@ -301,14 +301,14 @@ div.myprofile {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 6vw;
+    width: 7vw;
 }
 
 div.mpShare {
     display: flex;
     align-items: center;
     justify-content: space-around;    
-    width: 12vw;
+    width: 17vw;
 }
 
 
@@ -316,21 +316,21 @@ div.pEng {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 10vw;
+    width: 12vw;
     background-color: #e7c7fe;
     border-radius: 12px;
-    padding: 3px 10px;
+    padding: 1px 8px;
 }
 
 div.pSearch {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 8vw;
+    width: 11vw;
 }
 
 img.imgMp {
-    height: 20px;
+    height: 15px;
 }
 
 .perfilLink {
