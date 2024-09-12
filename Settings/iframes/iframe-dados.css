@@ -31,7 +31,7 @@ div#seusDados {
     margin-left: 9%;
 }
 
-form#formInfos {
+#formInfos {
     display: flex;
     flex-flow: row wrap;
 }

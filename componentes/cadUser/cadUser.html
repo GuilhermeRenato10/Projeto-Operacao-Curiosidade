@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="style-cadUser.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+</head>
+<body>
+    <section class="cadSize">
+        <div class="purple">
+
+        </div>
+        <div class="containerCad">
+            <header class="topoCad">
+                <p>Cadastro de usuário</p>
+                <img src="../../icons/close.svg" alt="">
+            </header>
+            <div class="linhaCad">
+                <hr>
+            </div>
+            <div id="attImg">
+                <img id="imgCad" src="../../icons/person.svg" alt="sua-foto">
+                <div id="updateCad">
+                        <button class="layoutButtonCad"><img class="imgUpCad" src="../../icons/arrow-update.svg" alt="">Atualize sua imagem</button>
+                        <button class="layoutButtonCad"><img class="imgUpCad" src="../../icons/trash.png" alt="">Remover imagem</button>
+                </div>
+            </div>
+            <div id="subtitleCad">
+                <img src="../../icons/id card.svg" alt="">
+                <p>Fatos e Dados</p>
+            </div>
+            <form id="formInfosCad">
+                <div id="nieCad">
+                    <div class="labelSobre">
+                        <label class="labelLayout" for="nome">Nome</label>
+                        <input class="padrao" type="text" name="nome" id="nome">
+                    </div>
+                    <div class="labelSobre">
+                        <label class="labelLayout" for="age">Idade</label>
+                        <input class="padrao" type="number" name="age" id="age">
+                    </div>
+                    <div class="labelSobre">
+                        <label class="labelLayout" for="email">E-mail</label>
+                        <input class="padrao" type="text" name="email" id="email">
+                    </div>
+                </div>
+                <div id="ndeCad">
+                    <div class="labelSobre">
+                        <label class="labelLayout" for="nUser">Nome de Usuário</label>
+                        <input class="padrao" type="text" name="nUser" id="nUser">
+                    </div>
+                    <div class="labelSobre">
+                        <label class="labelLayout" for="dataNasc">Data de Nascimento</label>
+                        <input class="padrao" type="date" name="dataNasc" id="dataNasc">
+                    </div>
+                    <div class="labelSobre">
+                        <label class="labelLayout" for="estCivil">Estado Civil</label>
+                        <input class="padrao" type="text" name="estCivil" id="estCivil">
+                    </div>
+                </div>
+                <div id="telEndCad">
+                    <div class="labelSobre">
+                        <label class="labelLayout" for="tel">Telefone</label>
+                        <input class="padrao" type="number" name="tel" id="tel">
+                    </div>
+                    <div class="labelSobre">
+                        <label class="labelLayout" for="address">Endereço</label>
+                        <input class="padrao" type="text" name="address" id="address">
+                    </div>
+                </div>
+                <div id="pcfCad">
+                    <div class="labelSob">
+                        <label class="labelLayout" for="job">Profissão</label>
+                        <input class="padrao" type="text" name="job" id="job">
+                    </div>
+                    <div class="labelSob">
+                        <label class="labelLayout" for="position">Cargo</label>
+                        <input class="padrao" type="text" name="position" id="position">
+                    </div>
+                    <div class="labelSob">
+                        <label class="labelLayout" for="acad">Formação Acadêmica</label>
+                        <input class="padrao" type="text" name="acad" id="acad">
+                    </div>
+                </div>
+            </form>
+            <div id="passCad">
+                <p>Defina uma senha</p>
+                <div id="labelCadPass">
+                    <label id="currentPass" for="senhaCad">Senha Atual</label>
+                    <input type="password" name="senhaCad" id="senhaCad">
+                </div>
+                <div id="layoutCheck">
+                    <input type="checkbox" name="checkAdmin" id="checkAdmin">
+                    <label id="adminCad" for="checkAdmin">Administrador</label>
+                </div>
+            </div>
+            <div class="linhaCad">
+                <hr>
+            </div>
+            <button id="saveCad">
+                <img id="saveAsCad" src="../../icons/save as.svg" alt="">Salvar
+            </button>
+        </div>
+    </section>
+</body>
+</html>

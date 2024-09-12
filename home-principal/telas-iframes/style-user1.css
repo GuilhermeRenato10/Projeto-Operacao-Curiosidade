@@ -178,7 +178,22 @@ div.sde {
     margin-right: 1em;
 }
 
+button.btnShare {
+    background-color: white;
+    border: none;
+}
+
+button.btnDelete {
+    background-color: white;
+    border: none;
+}
+
+button.btnEdit {
+    background-color: white;
+    border: none;
+}
+
 img.iconC {
-    width: 40%;
+    width: 20px;
 }
 

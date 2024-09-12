@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+:root {
+    --main-color: #6e27a1;
+    --main-font-size: 0.8em;
+    --main-size-icon: 20px 20px;
+    --main-position-icon: 10px center;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: bisque;
+}
+
+section.cadSize {
+    display: flex;
+    width: 800px;
+    height: 640px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+div.containerCad {
+    width: 100%;
+}
+
+div.purple {
+    width: 25px;
+    background-color: rgb(150, 42, 42);
+    border-radius: 15px 0px 0px 15px;
+}
+
+header.topoCad {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header.topoCad > p {
+    font-weight: 500;
+    margin-left: 1em;
+}
+
+header.topoCad > img {
+    background-color: rgb(243, 241, 241);
+    height: 30px;
+    border-radius: 8px;
+    margin-right: 1em;
+}
+
+div.linhaCad > hr {
+    margin: 0;
+    margin-left: 1em;
+    width: 95%;
+}
+
+div#attImg {
+    display: flex;
+    gap: 1em;
+    margin-left: 0.5em;
+    margin-top: 1.5em;
+}
+
+img#imgCad {
+    border: 1px solid var(--main-color);
+    background-color: #f5e6ff;
+    width: 70px;
+    height: 65px;
+    border-radius: 10px;
+}
+
+div#updateCad {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+button.layoutButtonCad {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-family: 'Poppins';
+    width: 185px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+}
+
+.imgUpCad {
+    height: 20px;
+}
+
+div.mainContentOp {
+    border: 1px solid lightgray;
+    margin-top: 1em;
+    border-radius: 6px;
+    width: 97%;
+    height: 55%;
+    margin-left: 0.5em;
+    box-shadow: 3px 3px 3px 0px rgba(211, 211, 211, 0.199);
+}
+
+header.topoOp {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    background-color: var(--main-color);
+    height: 40px;
+    border-radius: 6px 6px 0 0;
+}
+
+header.topoOp > p {
+    color: white;
+    font-weight: 600;
+}
+
+header.topoOp > img {
+    margin-left: 1em;
+}
+
+#formInfosOp {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin-left: 1em;
+    padding: 10px;
+}
+
+div#seusDados > h2 {
+    color: var(--main-color);
+    font-size: 1em;
+    margin-bottom: 2%;
+}
+
+div.labelSobreOp {
+    display: flex;
+    flex-direction: column;
+}
+
+div#nieOp, div#ndeOp, div#telEndOp, div#pcfOp {
+    display: flex;
+    gap: 2%;
+}
+
+input#nome, input#email, input#acad {
+    width: 300px;
+}
+
+input#age {
+    width: 35px;
+}
+
+input#nUser, input#job {
+    width: 160px;
+}
+
+input#dataNasc, input#estCivil, input#tel, input#position, input#acad {
+    width: 258px;
+}
+
+input#address {
+    width: 445px;
+}
+
+label.labelLayout {
+    color: var(--main-color);
+    font-size: var(--main-font-size);
+}
+
+input.padrao {
+    margin-bottom: 2%;
+    border-radius: 5px;
+    height: 20px;
+    border: 1px solid lightgray;
+    padding: 5px;
+}
