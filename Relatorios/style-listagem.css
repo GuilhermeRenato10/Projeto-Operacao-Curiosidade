@@ -443,5 +443,32 @@ div#logoFl > img {
     width: 10vw;
 }
 
+.backListagem {
+    display: none;
+    flex-direction: column;
+}
+
+div#refresh {
+    display: flex;
+    align-items: center;
+    width: 20vw;
+    border: 1px solid var(--main-color);
+    border-radius: 6px;
+    padding: 3px;
+    gap: 2%;
+    margin-left: 2em;
+}
+
+div#refresh > a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: var(--main-font-size);
+}
+
+
+iframe.reports {
+    margin-top: 1.3em;
+    margin-left: 2em;
+}
 
 

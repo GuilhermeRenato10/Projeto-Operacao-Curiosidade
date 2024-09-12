@@ -26,8 +26,8 @@
             <div id="footerDiv"></div>
         </nav>
         <div id="contentMain">
-            <header>
-                <input type="text" name="search" id="search" placeholder="Pesquise Aqui">
+            <header id="cabecaHome">
+                <input type="text" name="searchHome" id="searchHome" placeholder="Pesquise Aqui">
                 <input type="checkbox" id="switch" /><label for="switch"></label>
                 <div id="bell">
 
@@ -84,6 +84,69 @@
             </main>
         </div>
     </div>
+    <div class="modal">
+        <section class="tamanho">
+            <div class="purple">
+            </div>
+            <div class="containerGeral">
+                <header id="topo">
+                        <h1 id="cabeca">Definição de compartilhamento</h1>
+                        <img id="close" src="../../icons/close.svg" alt="">
+                </header>
+                <div id="linha">
+                    <hr>
+                </div>
+                <main class="orgContent">
+                    <p>Insira o nome do usuário que deseja incluir em sua lista
+                        de compartilhamento e pressione a tecla <strong>Enter</strong>
+                    </p>
+                    <input type="text" name="search" id="search" placeholder="Pesquise aqui">
+                    <p>Selecione um usuário para definir o modo de
+                        compartilhamento de sua Operação Curiosidade.
+                    </p>
+                    <div class="profiles">
+                            <div class="perfilContent">
+                                <div class="ordem">
+                                    <div class="layoutPerfil">
+                                        <img src="../../imgs/Pamela-Fernandes.png" alt="">
+                                        <p>Pamela Matos Fernandes</p>
+                                    </div>
+                                    <div class="layoutButton">
+                                        <button class="edit">Editar<img src="../../icons/keyboardw.svg" alt=""></button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="profiles">
+                        <div class="perfilContent">
+                            <div class="ordem">
+                                <div class="layoutPerfil">
+                                    <img src="" alt="">
+                                    <p>Pamela Matos Fernandes</p>
+                                </div>
+                                <div class="layoutButton">
+                                    <button class="edit">Editar<img src="../../icons/keyboardw.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="profiles">
+                    <div class="perfilContent">
+                        <div class="ordem">
+                            <div class="layoutPerfil">
+                                <img src="" alt="">
+                                <p>Pamela Matos Fernandes</p>
+                            </div>
+                            <div class="layoutButton">
+                                <button class="visu">Visualizar<img src="../../icons/keyboardp.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </main>
+            </div>
+        </section>
+    </div>
+    <script src="script-modalHome.js"></script>
 </body>
-
 </html>

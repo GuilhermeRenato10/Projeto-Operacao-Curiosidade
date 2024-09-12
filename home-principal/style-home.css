@@ -137,14 +137,14 @@ div#contentMain {
     width: 80%; /* Ajustando o tamanho do main */
 }
 
-header {
+header#cabecaHome {
     display: flex;
     align-items: center;
     background-color: white;
     width: 100%;
 }
 
-input#search {
+input#searchHome {
     background-image: url('../icons/lupa.png');
     background-repeat: no-repeat;
     background-size: var(--main-size-icon);
@@ -394,4 +394,137 @@ div.mark > p {
 
 img.logoFL {
     width: 60%; 
+}
+
+div.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo fosco */
+    justify-content: center;
+    align-items: center;
+}
+
+section.tamanho {
+    display: flex;
+    width: 650px;
+    height: 700px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+div.purple {
+    width: 40px;
+    height: 100%;
+    background-color: var(--main-color);
+    border-radius: 12px 0px 0px 12px;
+}
+
+div.containerGeral {
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+}
+
+header#topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1#cabeca {
+    color: black;
+    font-size: 1.1em;
+    margin-left: 10px;
+}
+
+img#close {
+    background-color: lightgray;
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+}
+
+main.orgContent {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+}
+
+input#search {
+    height: 35px;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+}
+
+div.perfilContent {
+    display: flex;
+    flex-direction: column;
+}
+
+div.ordem {
+    display: flex;
+    align-items: center;
+    width: 100%;  
+}
+
+div.layoutPerfil {
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 60px;
+    border: 1px solid lightgrey;
+    border-radius: 10px 0px 0px 10px;
+    
+}
+
+div.layoutPerfil > p {
+    margin: 0;
+}
+
+div.layoutButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid lightgray;
+    width: 180px;
+    height: 60px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+button.edit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins';
+    font-size: 0.9em;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    width: 100px;
+    height: 35px;
+    border-radius: 9px;
+    
+}
+
+button.visu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins';
+    font-size: 0.9em;
+    background-color: white;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    width: 100px;
+    height: 35px;
+    border-radius: 9px;
 }

@@ -28,20 +28,6 @@ main.analise {
     flex-direction: column;
 }
 
-div#refresh {
-    display: flex;
-    align-items: center;
-    width: 20vw;
-    border: 1px solid var(--main-color);
-    border-radius: 6px;
-    padding: 3px;
-}
-
-div#refresh > a {
-    text-decoration: none;
-    color: var(--main-color);
-    font-size: var(--main-font-size);
-}
 
 div.informacoes {
     display: flex;
