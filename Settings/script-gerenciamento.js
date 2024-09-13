@@ -1,3 +1,5 @@
+const createUser = document.querySelector('#buttonUser');
+const modal = document.querySelector('.modal');
 const divs = document.querySelectorAll('#overflow');
 let startX, scrollLeft;
 
@@ -25,3 +27,14 @@ divs.forEach(div => {
         div.style.transform = `translateX(${-scrollLeft + walk}px)`;
     }
 });
+
+createUser.addEventListener('click', function(){
+    modal.style.display = 'flex';
+    createUser.style.display = 'flex';
+})
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}

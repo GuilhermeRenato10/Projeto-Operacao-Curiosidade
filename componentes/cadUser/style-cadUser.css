@@ -9,7 +9,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: bisque;
+    background-color: white;
+    margin: 0;
 }
 
 section.cadSize {

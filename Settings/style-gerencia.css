@@ -420,8 +420,8 @@ button.equal {
 button#buttonUser {
     background-color: var(--main-color);
     color: white;
-    height: 5vh;
-    width: 9vw;
+    height: 45px;
+    width: 111px;
     border: none;
     border-radius: 5px;
     font-family: 'Poppins';
@@ -623,4 +623,21 @@ div#logoFl > p {
 
 div#logoFl > img {
     width: 10vw;
+}
+
+div.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo fosco */
+    justify-content: center;
+    align-items: center;
+}
+
+#frameCad {
+    border-radius: 15px;
 }
