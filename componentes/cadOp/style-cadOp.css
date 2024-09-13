@@ -10,6 +10,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: bisque;
+    margin: 0;
+    height: 640px;
 }
 
 section.cadSize {
@@ -90,14 +92,20 @@ button.layoutButtonCad {
     height: 20px;
 }
 
+div.scrollbarSection {
+    height: 65%; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
 div.mainContentOp {
     border: 1px solid lightgray;
     margin-top: 1em;
     border-radius: 6px;
     width: 97%;
-    height: 55%;
+    height: 80%;
     margin-left: 0.5em;
-    box-shadow: 3px 3px 3px 0px rgba(211, 211, 211, 0.199);
+    box-shadow: 6px 5px 20px -12px gray;
 }
 
 header.topoOp {
@@ -173,4 +181,128 @@ input.padrao {
     height: 20px;
     border: 1px solid lightgray;
     padding: 5px;
+}
+
+div.mainInteresses {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    width: 97%;
+    height: 68%;
+    margin-top: 1em;
+    margin-left: 0.5em;
+    border-radius: 5px;
+    box-shadow: 6px 5px 20px -12px gray;
+}
+
+header.headerFeel {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px 5px 0px 0px;
+    height: 40px;
+    background-color: var(--main-color);
+}
+
+div.headerLeft {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 1em;
+    gap: 0.5em;
+}
+
+div.headerLeft > p {
+    color: white;
+    font-weight: 500;
+}
+
+div.headerRight {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2em;
+    gap: 1em;
+}
+
+p.styleP {
+    color: var(--main-color);
+    background-color: #e1c6f5;
+    font-size: var(--main-font-size);
+    border-radius: 10px;
+    padding: 1px 15px 1px 6px;
+}
+
+span.numberInt {
+    color: var(--main-color);
+    font-weight: bolder;
+}
+
+div.fundo-branco {
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.interestList {
+    list-style: none;
+    padding: 0;
+    margin-top: 1em;
+}
+
+.interestItem {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 0.5em;
+    height: 20%;
+}
+
+.numberCircle {
+    background-color: var(--main-color);
+    color: white;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 0.7em;
+    margin-right: 1em;
+}
+
+.interestInput {
+    flex-grow: 1;
+    padding: 0.5em;
+    border: none;
+    outline: none;
+}
+
+footer.rodapeCad {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+button#saveCadOp {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 100px;
+    font-family: 'Poppins';
+    font-size: 0.8em;
+    margin-top: 1em;
+    background-color: var(--main-color);
+    border: none;
+    color: white;
+    margin-left: 1em;
+    border-radius: 6px;
+    padding: 8px 12px;
+}
+
+img#saveAsCadOp {
+    width: 15px;
 }

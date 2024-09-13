@@ -2,6 +2,7 @@ const modal = document.querySelector('.modal');
 const closeBtn = document.querySelector('#close');
 const sectionShare = document.querySelector('.tamanho');
 const containerFrame = document.querySelector('#frameDel');
+const closeBtnEdit = document.querySelector('#closeEdit');
 
 
 window.addEventListener('message', function(event) {
@@ -21,8 +22,8 @@ window.addEventListener('message', function(event) {
         modal.style.display = 'flex';
         containerFrame.style.display = 'flex';
         containerFrame.src = '../componentes/cadOp/cadOp.html';
-        containerFrame.width = 800; /*Colocar o valor necessário*/ 
-        containerFrame.height = 700;
+        containerFrame.width = 800;  
+        containerFrame.height = 640;
     }
 });
 
