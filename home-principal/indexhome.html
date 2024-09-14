@@ -34,15 +34,36 @@
                 </div>
                 <div class="perfil">
                     <div class="fotoPerfil">
-
+                        
                     </div>
-                    <div></div>
+                    <div class="comando">
+                        <p>Eduardo Rodrigues</p>
+                        <p>[Administrador]</p>
+                    </div>
+                    <div class="expand">
+                        <img class="openPerfil" src="../icons/expand.png" alt="expandir">
+                    </div>
+                    <div class="perfilDrop">
+                        <ul>
+                            <li class="listaDrop"><img src="" alt="">Perfil</li>
+                            <hr>
+                            <li class="listaDrop"><img src="" alt=""><a href="../Settings/configs.html">Configurações</a></li>
+                            <hr>
+                            <li class="listaDrop"><img src="" alt=""><a href="../Tela-login/index.html">Sair</a></li>
+                        </ul>
+                    </div>
                 </div>
             </header>
             <div id="filtros">
-                <button id="border"><img class="iconFiltros" src="../icons/recentIcon.svg" alt="">Últimas cadastradas</button>
-                <button class="group"><img class="iconFiltros" src="../icons/diversityIcon.svg" alt="">Compartilhadas por mim</button>
-                <button class="group"><img class="iconFiltros" src="../icons/diversityIcon.svg" alt="">Compartilhadas comigo</button>
+                <button class="group selected">
+                    <img class="iconFiltros" src="../icons/recentIcon.svg" alt="">Últimas cadastradas
+                </button>
+                <button class="group">
+                    <img class="iconFiltros" src="../icons/diversityIcon.svg" alt="">Compartilhadas por mim
+                </button>
+                <button class="group">
+                    <img class="iconFiltros" src="../icons/diversityIcon.svg" alt="">Compartilhadas comigo
+                </button>
             </div>
             <main>
                 <section id="peopleCards">
@@ -86,6 +107,7 @@
     </div>
     <div class="modal">
         <section class="tamanho">
+            <div class="modalTamanho"></div>
             <div class="purple">
             </div>
             <div class="containerGeral">
@@ -112,8 +134,19 @@
                                         <img class="sizeImg" src="../imgs/Pamela-Fernandes.png" alt="">
                                         <p class="sizeP">Pamela Matos Fernandes</p>
                                     </div>
-                                    <div class="layoutButton">
-                                        <button class="edit">Editar<img src="../icons/keyboardw.svg" alt=""></button>
+                                    <div class="dropdown">
+                                        <div class="layoutButton">
+                                            <button class="edit">Editar
+                                                <img class="iconBtnEdit" src="../icons/keyboardw.svg" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="dropdown-content">
+                                            <button class="edit">Editar
+                                                <img class="tpWdd" src="../icons/keyboardw.svg" alt="">
+                                            <button class="visu">Visualizar
+                                                <img class="tpPdd" src="../icons/keyboardp.svg" alt="">
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -126,7 +159,9 @@
                                         <p class="sizeP">Pamela Matos Fernandes</p>
                                     </div>
                                     <div class="layoutButton">
-                                        <button class="edit">Editar<img src="../icons/keyboardw.svg" alt=""></button>
+                                        <button class="edit">Editar
+                                            <img class="tpW" src="../icons/keyboardw.svg" alt="">
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -140,7 +175,7 @@
                                     </div>
                                     <div class="layoutButton">
                                         <button class="visu">Visualizar
-                                            <img src="../icons/keyboardp.svg" alt="">
+                                            <img class="tpW" src="../icons/keyboardp.svg" alt="">
                                         </button>
                                     </div>
                                 </div>

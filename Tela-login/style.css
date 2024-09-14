@@ -32,7 +32,7 @@ div#box-container {
     align-items: center;
     width: 34vw;  /* Aumentei para 35% da largura da viewport */
     height: 78vh; /* Aumentei para 65% da altura da viewport */
-    border-radius: 10px;
+    border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 0.096);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.123);
 }
@@ -125,16 +125,20 @@ div.bottom-submit {
     padding: 0px;
 }
 
-button[type="submit"] {
-    text-align: center;
+a#enter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 5vh;
     font-weight: bolder;
     border: none;
     background-color: var(--main-color);
     color: white;
-    border-radius: 10px;
-    width: 12vw;  /* Aumentei para 12% da largura da viewport */
-    height: 6vh;  /* Aumentei para 6% da altura da viewport */
+    font-size: 0.8em;
+    border-radius: 12px;
+    width: 12vw;  
+    height: 6vh;  
+    text-decoration: none;
 }
 
 /* --------------------------------------------------------------------------------------------------------- */
@@ -145,15 +149,6 @@ button[type="submit"] {
 
 .autoplay li img {
     margin: 0 auto;
-}
-
-div.info-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 38vw;  
-    height: 80vh; 
 }
 
 img#onionBig {
@@ -175,7 +170,7 @@ p > span.pColor {
 div.mark {
     display: flex;
     width: 100%;
-    margin-top: 10vw;
+    margin-top: 4vw;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -189,3 +184,8 @@ div.mark > p {
 img.logoFL {
     width: 28%;   
 }
+
+.slick-dots li button {
+    width: 50px;
+    height: 50px;
+  }

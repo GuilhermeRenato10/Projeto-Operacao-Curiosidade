@@ -17,7 +17,8 @@
     box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     height: 100%;
     width: 100%;
 }
@@ -26,27 +27,29 @@ div#container {
     display: flex;
     flex-direction: row;
     width: 100vw;
-    height: 100%; /* Ocupar a altura total da tela */
+    height: 100%;
+    /* Ocupar a altura total da tela */
 }
 
 nav#sidebar {
     display: flex;
     flex-direction: column;
-    width: 19%; 
-    background-color: white; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
-    z-index: 1; 
+    width: 19%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 div#imgOC {
     border-radius: 25px 0px 0px 0px;
     background-color: var(--main-color);
     width: 100%;
-    height: 10%; 
+    height: 10%;
 }
 
 img#logoOC {
-    width: 100%; /* Ajuste a largura para ficar proporcional */
+    width: 100%;
+    /* Ajuste a largura para ficar proporcional */
     padding: 7%;
 }
 
@@ -54,7 +57,7 @@ img#logoOC {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
 
 #sidebar ul li.items {
@@ -67,28 +70,28 @@ img#logoOC {
 }
 
 li#vg {
-    background-image: url('../icons/grid-dashboard.svg');
+    background-image: url('../icons/dashgridP.svg');
     background-repeat: no-repeat;
     background-position: var(--main-position-icon);
     background-size: var(--main-size-icon);
 }
 
 li#cc {
-    background-image: url('../icons/add-box.svg');
+    background-image: url('../icons/addBoxP.svg');
     background-repeat: no-repeat;
     background-position: var(--main-position-icon);
     background-size: var(--main-size-icon);
 }
 
 li#mc {
-    background-image: url('../icons/char-list.svg');
+    background-image: url('../icons/charListP.svg');
     background-repeat: no-repeat;
     background-position: var(--main-position-icon);
     background-size: var(--main-size-icon);
 }
 
 li#rs {
-    background-image: url('../icons/insert-char.svg');
+    background-image: url('../icons/insertP.svg');
     background-repeat: no-repeat;
     background-position: var(--main-position-icon);
     background-size: var(--main-size-icon);
@@ -111,7 +114,7 @@ li#rs:hover {
 }
 
 #sidebar ul li.items:hover {
-    background-color: var(--main-color); 
+    background-color: var(--main-color);
     color: white;
     border-radius: 10px;
 }
@@ -134,7 +137,8 @@ div#footerDiv {
 div#contentMain {
     display: flex;
     flex-direction: column;
-    width: 80%; /* Ajustando o tamanho do main */
+    width: 80%;
+    /* Ajustando o tamanho do main */
 }
 
 header#cabecaHome {
@@ -151,7 +155,8 @@ input#searchHome {
     background-position: 25% center;
     width: 55%;
     height: 3em;
-    padding-left: 2.5em; /* Para afastar o texto do ícone */
+    padding-left: 2.5em;
+    /* Para afastar o texto do ícone */
     border: 2px solid rgb(240, 240, 240);
     border-radius: 5px;
     margin-left: 2%;
@@ -194,19 +199,22 @@ label::after {
     background: #fff;
     border-radius: 50px;
     transition: 0.3s;
-    background-image: url('../icons/brush.png'); /* Opcional: Ícone adicional, se necessário */
+    background-image: url('../icons/brush.png');
+    /* Opcional: Ícone adicional, se necessário */
     background-repeat: no-repeat;
     background-size: 15px 15px;
     background-position: center;
-    z-index: 1; /* Garantir que a bolinha branca esteja acima */
+    z-index: 1;
+    /* Garantir que a bolinha branca esteja acima */
 }
 
-input:checked + label {
+input:checked+label {
     background: #6e27a1
 }
 
-input:checked + label::after {
-    left: calc(100% - 5px); /* Ajuste para mover a bolinha branca para a direita */
+input:checked+label::after {
+    left: calc(100% - 5px);
+    /* Ajuste para mover a bolinha branca para a direita */
     transform: translateX(-100%);
 }
 
@@ -229,6 +237,7 @@ div#bell {
 div.perfil {
     display: flex;
     flex-direction: row;
+    position: relative;
     background-color: #6e27a1;
     height: 10vh; 
     width: 18vw;  
@@ -254,11 +263,39 @@ div.fotoPerfil {
     background-size: cover;
 }
 
+div.comando {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-left: 1em;
+    padding: 4px;
+}
+
+div.comando > p {
+    color: white;
+    font-size: 0.7em;
+}
+
+div.expand {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+div.expand img {
+    width: 100%; 
+    height: 100%;
+    margin-left: 1em;
+}
 
 div#filtros {
     display: flex;
     flex-direction: row;
-    width: 40vw;
+    width: 60%;
     margin-top: 1vh;
     margin-left: 5em;
     justify-content: flex-start;
@@ -266,23 +303,11 @@ div#filtros {
     gap: 1em;
 }
 
-div#filtros > p {
+div#filtros>p {
     font-family: var(--main-font);
     font-size: 0.7em;
     color: var(--main-color);
     text-align: center;
-}
-
-button#border {
-    display: flex;
-    align-items: center;
-    color: #6e27a1;
-    gap: 1em;
-    font-size: 0.7em;
-    border: none;
-    border-radius: 12px;
-    font-weight: 500;
-    padding: 0.1em 1.5em;
 }
 
 .group {
@@ -294,6 +319,7 @@ button#border {
     border-radius: 10px;
     color: var(--main-color);
     font-size: 0.7em;
+    box-sizing: border-box;
 }
 
 img.iconFiltros {
@@ -326,7 +352,7 @@ iframe.iframeBorder {
 }
 
 img.iconC {
-    width: 40%; 
+    width: 40%;
 }
 
 aside.infoCards {
@@ -337,7 +363,7 @@ aside.infoCards {
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-    
+
 }
 
 div.header {
@@ -377,7 +403,7 @@ div.values {
     justify-content: center;
 }
 
-div.values > p {
+div.values>p {
     font-family: var(--main-font);
     font-size: 3.8em;
 }
@@ -393,12 +419,12 @@ div.mark {
     gap: 15px;
 }
 
-div.mark > p {
+div.mark>p {
     font-size: var(--main-font-size);
 }
 
 img.logoFL {
-    width: 60%; 
+    width: 60%;
 }
 
 div.modal {
@@ -409,7 +435,8 @@ div.modal {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo fosco */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fundo fosco */
     justify-content: center;
     align-items: center;
 }
@@ -436,10 +463,10 @@ header#topo {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 50px; 
+    height: 50px;
 }
 
-div#linha > hr {
+div#linha>hr {
     width: 100%;
     margin: 0;
 }
@@ -485,6 +512,11 @@ main.orgContent {
 }
 
 input#search {
+    background-image: url('../icons/lupa.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: right;
+    padding-left: 10px;
     height: 45px;
     width: 100%;
     border: 1px solid lightgray;
@@ -499,7 +531,7 @@ div.perfilContent {
 div.ordem {
     display: flex;
     align-items: center;
-    width: 100%;  
+    width: 100%;
 }
 
 div#sizeProfiles {
@@ -515,14 +547,14 @@ div.profiles {
 div.layoutPerfil {
     display: flex;
     align-items: center;
-    width: 350px;
+    width: 300px;
     height: 50px;
     border: 1px solid lightgrey;
     border-radius: 10px 0px 0px 10px;
     gap: 1em;
 }
 
-div.layoutPerfil > p {
+div.layoutPerfil>p {
     margin: 0;
 }
 
@@ -537,7 +569,8 @@ div.layoutButton {
     align-items: center;
     justify-content: center;
     border: 1px solid lightgray;
-    width: 180px;
+    width: 120px;
+    padding: 0px 10px;
     height: 50px;
     border-radius: 0px 10px 10px 0px;
 }
@@ -575,4 +608,69 @@ button.visu {
 #frameDel {
     display: none;
     border-radius: 15px;
+}
+
+div.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+div.dropdown-content {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    background-color: white;
+    width: 110px;
+    height: 100px;
+    border-radius: 15px;
+    top: 45px;
+    right: 5px;
+    z-index: 10;
+}
+
+.dropdown-content .edit:hover {
+    background-color: #381452;
+    cursor: pointer;
+}
+
+.dropdown-content .visu:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+div.modalTamanho {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fundo fosco */
+    justify-content: center;
+    align-items: center;
+}
+
+.selected {
+    background-color: #e8c7ff;
+    padding: 0.3em 1.25em;
+}
+
+div.perfilDrop {
+    display: block;
+    position: absolute;
+    top: 63px;
+    right: 0px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    width: 235px;
+    height: 200px;
+}
+
+li.listaDrop {
+    list-style: none;
 }
