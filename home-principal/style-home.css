@@ -242,16 +242,28 @@ div#bell {
 }
 
 section#sizeNot {
+    position: relative; 
     display: none;
     flex-direction: column;
-    position: absolute;
     background-color: white;
     border-radius: 20px;
+    margin: 50px;
     width: 330px;
-    height: 400px;
-    top: 30px;
-    right: -80px;
-    z-index: 10;
+    height: 320px;
+}
+
+
+section#sizeNot::before {
+    content: "";
+    position: absolute;
+    top: -15px; 
+    left: 75%; 
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent; 
+    border-right: 20px solid transparent; 
+    border-bottom: 25px solid white; 
 }
 
 header#topoNot {
@@ -280,6 +292,7 @@ div#styleNumber {
 div.contentNots {
     display: flex;
     flex-direction: column;
+    margin-bottom: 5px;
 }
 
 div.sizeNot {
@@ -288,35 +301,50 @@ div.sizeNot {
     border: 1px solid lightgray;
     border-radius: 8px;
     width: 95%;
-    height: 35%;
+    height: 100%;
     margin-left: 0.5em;
 }
 
 img.imgNot {
-    width: 30px;
+    width: 45px;
     height: 35px;
     border-radius: 5px;
-    margin-left: 0.5em;
 }
 
 div.columnNot {
     display: flex;
     flex-direction: column;
-    height: 60%;
 }
 
-div.columnNot > p {
-    font-size: var(--main-font-size);
-}
-
-div.linhaNot {
+div.topLine {
     display: flex;
-    height: 60%;
+    justify-content: space-between;
+    align-items: center;
 }
 
-div.linhaNot > p {
-    color: var(--main-color);
+div.topLine > p {
+    margin: 0;
     font-size: var(--main-font-size);
+}
+
+p.horaNot {
+    color: var(--main-color);
+    font-size: 0.7em;
+    margin-left: 10px;
+}
+
+div.columnNot > p:not(.horaNot) {
+    font-size: var(--main-font-size);
+    margin: 0;
+    margin-top: 0.5em;
+}
+
+p.styleArroba {
+    color: var(--main-color);
+}
+
+p.styleText {
+    color: lightgrey;
 }
 
 div.perfil {
@@ -806,3 +834,4 @@ a.endDrop:visited {
 .menuLink:hover {
     color: white;
 }
+
