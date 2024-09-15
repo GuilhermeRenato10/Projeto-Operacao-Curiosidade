@@ -450,12 +450,13 @@ div#logoFl > img {
 div#refresh {
     display: flex;
     align-items: center;
-    width: 20vw;
+    justify-content: space-evenly;
+    width: 25vw;
     border: 1px solid var(--main-color);
     border-radius: 6px;
     padding: 3px;
-    gap: 2%;
     margin-left: 2em;
+    margin-right: 2em;
 }
 
 div#refresh > a {

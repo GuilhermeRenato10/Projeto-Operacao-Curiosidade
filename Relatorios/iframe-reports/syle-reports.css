@@ -63,6 +63,16 @@ button.bMake {
     padding: 6px 20px;
 }
 
+button.bMake2 {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1em;
+    margin-right: 1em;
+    padding: 6px 20px;
+}
+
 label.labelInfo {
     font-size: 0.7em;
 }
@@ -129,13 +139,13 @@ div#espacamentoName {
 
 div#espacamentoEmail {
     width: 12%;
-    margin-left: 5.7%;
+    margin-left: 17%;
 }
 
 div#espacamentoDate,
 div#espacamentoType {
     width: 15%;
-    margin-left: 6%;
+    margin-left: 10%;
 }
 
 div.especificacoes {
@@ -207,14 +217,14 @@ p.subtitle {
 }
 
 input#page {
-    width: 3.5%;
-    height: 2.5vh;
+    width: 12%;
+    height: 3.5vh;
 }
 
 img.transp,
 img.purple {
-    width: 1.2%;
-    height: 1.2%;
+    width: 10%;
+    height: 4%;
     border-radius: 5px;
 }
 
@@ -229,6 +239,46 @@ img.purple {
     background-color: var(--main-color);
 }
 
+p.nameSize {
+    margin-left: 5%;
+}
+
 div.emailBox {
     width: 25%;
+}
+
+div.nomeBox {
+    width: 25%;
+}
+
+p.typeBox {
+    margin-left: 30%;
+    background-color: #6e27a186;
+    color: rgba(255, 255, 255, 0.692);
+    padding: 1px 8px;
+    border-radius: 8px;
+}
+
+p.typeBox2 {
+    margin-left: 30%;
+    background-color: var(--main-color);
+    color: white;
+    padding: 1px 8px;
+    border-radius: 8px;
+}
+
+div#logoFl {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 2%;
+    gap: 1%;
+}
+
+div#logoFl > p {
+    font-size: var(--main-font-size);
+}
+
+div#logoFl > img {
+    width: 12vw;
 }
