@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Operação Curiosidade</title>
+    <link rel="stylesheet" href="style-cadOpc.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+</head>
+<body>
+    <section class="cadSize">
+        <div class="red disable">
+
+        </div>
+        <div class="containerCad">
+            <header class="topoCad">
+                <p>Editar Cadastro de Operação Curiosidade</p>
+                <img id="closeEdit" src="../../icons/close.svg" alt="">
+            </header>
+            <div class="linhaCad">
+                <hr>
+            </div>
+            <div class="scrollbarSection">
+            <div id="attImg">
+                <img id="imgCad" src="../../icons/person.svg" alt="sua-foto">
+                <div id="updateCad">
+                    <button class="layoutButtonCad"><img class="imgUpCad" src="../../icons/arrow-update.svg"
+                            alt="">Atualize sua imagem</button>
+                    <button class="layoutButtonCad"><img class="imgUpCad" src="../../icons/trash.png" alt="">Remover imagem</button>
+                </div>
+                <div class="styleToggle">
+                    <label id="textStatus" for="checkbox">Inativo</label>
+                    <label>
+                        <input class="toggleStatus" type="checkbox">
+                        <div class="toggleCad disable"></div>
+                    </label>
+                </div>
+            </div>
+                <div class="mainContentOp">
+                    <header class="topoOp">
+                        <img src="../../icons/idcardP.svg" alt="">
+                        <p>Fatos e Dados</p>
+                    </header>
+                    <form id="formInfosOp">
+                        <div id="nieOp">
+                            <div class="labelSobreOp">
+                                <label class="labelLayout" for="nome">Nome</label>
+                                <input class="padrao" type="text" name="nome" id="nome">
+                            </div>
+                            <div class="labelSobreOp">
+                                <label class="labelLayout" for="age">Idade</label>
+                                <input class="padrao" type="number" name="age" id="age">
+                            </div>
+                            <div class="labelSobreOp">
+                                <label class="labelLayout" for="email">E-mail</label>
+                                <input class="padrao" type="text" name="email" id="email">
+                            </div>
+                        </div>
+                        <div id="ndeOp">
+                            <div class="labelSobreOp">
+                                <label class="labelLayout" for="nUser">Nome de Usuário</label>
+                                <input class="padrao" type="text" name="nUser" id="nUser">
+                            </div>
+                            <div class="labelSobreOp">
+                                <label class="labelLayout" for="dataNasc">Data de Nascimento</label>
+                                <input class="padrao" type="date" name="dataNasc" id="dataNasc">
+                            </div>
+                        </div>
+                        <div id="telEndOp">
+                            <div class="labelSobreOp">
+                                <label class="labelLayout" for="tel">Telefone</label>
+                                <input class="padrao" type="number" name="tel" id="tel">
+                            </div>
+                            <div class="labelSobreOp">
+                                <label class="labelLayout" for="estCivil">Estado Civil</label>
+                                <input class="padrao" type="text" name="estCivil" id="estCivil">
+                            </div>
+                        </div>
+                        <div id="pcfOp">
+                            <div class="labelSobreOp">
+                                <label class="labelLayout" for="job">Profissão</label>
+                                <input class="padrao" type="text" name="job" id="job">
+                            </div>
+                            <div class="labelSobreOp">
+                                <label class="labelLayout" for="address">Endereço</label>
+                                <input class="padrao" type="text" name="address" id="address">
+                            </div>
+                        </div>
+                        <div id="formation">
+                            <div class="labelSobreOp">
+                                <label class="labelLayout" for="acad">Formação Acadêmica</label>
+                                <input class="padrao" type="text" name="acad" id="acad">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="feelings">
+                     <h3 class="estiloIconsOpc">
+                        <img class="iconsOpc" src="../../icons/hatP.svg
+                        " alt="">Interesses</h3>
+                     <p>Escreva no campo abaixo e pressione a tecla <strong>Enter</strong></p>
+                     <textarea class="areaPadrao" name="feel" id="feel"></textarea>
+                </div>
+                <div class="feelings">
+                    <h3 class="estiloIconsOpc">
+                       <img class="iconsOpc" src="../../icons/heart.png" alt="">Sentimentos</h3>
+                    <p>Escreva no campo abaixo e pressione a tecla <strong>Enter</strong></p>
+                    <textarea class="areaPadrao" name="feel" id="feel"></textarea>
+               </div>
+               <div class="feelings">
+                <h3 class="estiloIconsOpc">
+                   <img class="iconsOpc" src="../../icons/leaf.png" alt="">Valores</h3>
+                <p>Escreva no campo abaixo e pressione a tecla <strong>Enter</strong></p>
+                <textarea class="areaPadrao" name="feel" id="feel"></textarea>
+                </div>
+                </div>
+                <div id="linhaCadfooter">
+                    <hr>
+                </div>
+            <footer class="rodapeCad">
+                <button id="saveCadOp">
+                    <img id="saveAsCadOp" src="../../icons/save as.svg" alt="">Salvar
+                </button>
+            </footer>
+    </section>
+    <script src="script-cadOpc.js"></script>
+</body>
+
+</html>
+</body>
+</html>

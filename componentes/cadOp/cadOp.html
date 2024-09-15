@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Operação Curiosidade</title>
-    <link rel="stylesheet" href="style-cadOp.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <title>Cadastrar Curiosidade</title>
+    <link rel="stylesheet" href="style-cadCC.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
 </head>
 
 <body>
     <section class="cadSize">
-        <div class="purple">
+        <div class="red disable">
 
         </div>
         <div class="containerCad">
@@ -31,6 +30,13 @@
                             alt="">Atualize sua imagem</button>
                     <button class="layoutButtonCad"><img class="imgUpCad" src="../../icons/trash.png" alt="">Remover
                         imagem</button>
+                </div>
+                <div class="styleToggle">
+                    <label id="textStatus" for="checkbox">Inativo</label>
+                    <label>
+                        <input class="toggleStatus" type="checkbox">
+                        <div class="toggleCad disable"></div>
+                    </label>
                 </div>
             </div>
                 <div class="mainContentOp">
@@ -104,6 +110,9 @@
                             <div class="fundo-branco">
                                 <img src="../../icons/addBoxP.svg" alt="">
                             </div>
+                            <div class="fundo-branco">
+                                <img src="../../icons/removeBox.svg" alt="">
+                            </div>
                         </div>
                     </header>
                     <ul class="interestList">
@@ -137,6 +146,9 @@
                             </div>
                             <div class="fundo-branco">
                                 <img src="../../icons/addBoxP.svg" alt="">
+                            </div>
+                            <div class="fundo-branco">
+                                <img src="../../icons/removeBox.svg" alt="">
                             </div>
                         </div>
                     </header>
@@ -172,6 +184,9 @@
                             <div class="fundo-branco">
                                 <img src="../../icons/addBoxP.svg" alt="">
                             </div>
+                            <div class="fundo-branco">
+                                <img src="../../icons/removeBox.svg" alt="">
+                            </div>
                         </div>
                     </header>
                     <ul class="interestList">
@@ -198,11 +213,14 @@
                 <div class="linhaCad">
                     <hr>
                 </div>
-                <button id="saveCadOp">
-                    <img id="saveAsCadOp" src="../../icons/save as.svg" alt="">Salvar
-                </button>
+                <div class="btnFooter">
+                    <button id="saveCadOp">
+                        <img id="saveAsCadOp" src="../../icons/save as.svg" alt="">Salvar
+                    </button>
+                </div>
             </footer>
     </section>
+    <script src="script-cadOp.js"></script>
 </body>
 
 </html>

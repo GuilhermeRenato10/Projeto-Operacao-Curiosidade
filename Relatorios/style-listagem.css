@@ -61,34 +61,34 @@ img#logoOC {
     font-size: var(--main-font-size);
     margin: 1em;
     color: var(--main-color);
-    width: 75%;
-    padding: 2vh 2vw 2vh 4vw;
+    width: 80%;
+    padding: 1em 1em 1em 3em;
     cursor: pointer;
 }
 
 li#vg {
-    background-image: url('../icons/grid-dashboard.svg');
+    background-image: url('../icons/space_dashboard_24dp_6E27A1_FILL1_wght400_GRAD0_opsz24.svg');
     background-repeat: no-repeat;
     background-position: var(--main-position-icon);
     background-size: var(--main-size-icon);
 }
 
 li#cc {
-    background-image: url('../icons/add-box.svg');
+    background-image: url('../icons/addBoxP.svg');
     background-repeat: no-repeat;
     background-position: var(--main-position-icon);
     background-size: var(--main-size-icon);
 }
 
 li#mc {
-    background-image: url('../icons/char-list.svg');
+    background-image: url('../icons/charListP.svg');
     background-repeat: no-repeat;
     background-position: var(--main-position-icon);
     background-size: var(--main-size-icon);
 }
 
 li#rs {
-    background-image: url('../icons/insert-char.svg');
+    background-image: url('../icons/insert_chart_24dp_6E27A1_FILL1_wght400_GRAD0_opsz24.svg');
     background-repeat: no-repeat;
     background-position: var(--main-position-icon);
     background-size: var(--main-size-icon);
@@ -301,7 +301,7 @@ div#filtros > p {
 }
 
 button#border {
-    background-image: url('../icons/recentIcon.svg');
+    background-image: url('../icons/space_dashboard_24dp_6E27A1_FILL1_wght400_GRAD0_opsz24.svg');
     background-repeat: no-repeat;
     color: #6e27a1;
     font-size: 0.7em;
@@ -397,7 +397,6 @@ div.data {
 
 div.especificacoes {
     display: flex;
-    height: 100%;
     flex-direction: column;
     justify-content: flex-start;
     margin-top: 0.1vh;
@@ -444,6 +443,8 @@ div#logoFl > img {
 .backListagem {
     display: none;
     flex-direction: column;
+    width: 100%;
+    height: 85%;
 }
 
 div#refresh {
@@ -467,6 +468,14 @@ div#refresh > a {
 iframe.reports {
     margin-top: 1.3em;
     margin-left: 2em;
+}
+
+a.linksNav {
+    text-decoration: none;
+}
+
+a.linksNav:hover {
+    color: white;
 }
 
 

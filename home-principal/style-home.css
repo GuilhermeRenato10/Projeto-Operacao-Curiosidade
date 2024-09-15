@@ -17,8 +17,7 @@
     box-sizing: border-box;
 }
 
-body,
-html {
+body, html {
     height: 100%;
     width: 100%;
 }
@@ -70,7 +69,7 @@ img#logoOC {
 }
 
 li#vg {
-    background-image: url('../icons/dashgridP.svg');
+    background-image: url('../icons/space_dashboard_24dp_6E27A1_FILL1_wght400_GRAD0_opsz24.svg');
     background-repeat: no-repeat;
     background-position: var(--main-position-icon);
     background-size: var(--main-size-icon);
@@ -91,7 +90,7 @@ li#mc {
 }
 
 li#rs {
-    background-image: url('../icons/insertP.svg');
+    background-image: url('../icons/insert_chart_24dp_6E27A1_FILL1_wght400_GRAD0_opsz24.svg');
     background-repeat: no-repeat;
     background-position: var(--main-position-icon);
     background-size: var(--main-size-icon);
@@ -103,14 +102,17 @@ li#vg:hover {
 
 li#cc:hover {
     background-image: url('../icons/add-box-white.png');
+    color: white;
 }
 
 li#mc:hover {
     background-image: url('../icons/patient-list.png');
+    color: white;
 }
 
 li#rs:hover {
     background-image: url('../icons/insert-white.png');
+    color: white;
 }
 
 #sidebar ul li.items:hover {
@@ -222,6 +224,10 @@ label:active::after {
     width: 25px;
 }
 
+div.notifications {
+    position: relative;
+}
+
 div#bell {
     background-image: url('../icons/bell.png');
     background-repeat: no-repeat;
@@ -232,6 +238,85 @@ div#bell {
     height: 50%;
     margin-top: 1%;
     margin-left: 1%;
+    cursor: pointer;
+}
+
+section#sizeNot {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    width: 330px;
+    height: 400px;
+    top: 30px;
+    right: -80px;
+    z-index: 10;
+}
+
+header#topoNot {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    gap: 0.5em;
+    margin-left: 1em;
+    height: 40px;
+}
+
+header#topoNot > p {
+    font-weight: 500;
+}
+
+div#styleNumber {
+    text-align: center;
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    font-size: var(--main-font-size);
+    width: 20px;
+}
+
+div.contentNots {
+    display: flex;
+    flex-direction: column;
+}
+
+div.sizeNot {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    width: 95%;
+    height: 35%;
+    margin-left: 0.5em;
+}
+
+img.imgNot {
+    width: 30px;
+    height: 35px;
+    border-radius: 5px;
+    margin-left: 0.5em;
+}
+
+div.columnNot {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+}
+
+div.columnNot > p {
+    font-size: var(--main-font-size);
+}
+
+div.linhaNot {
+    display: flex;
+    height: 60%;
+}
+
+div.linhaNot > p {
+    color: var(--main-color);
+    font-size: var(--main-font-size);
 }
 
 div.perfil {
@@ -320,6 +405,7 @@ div#filtros>p {
     color: var(--main-color);
     font-size: 0.7em;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 img.iconFiltros {
@@ -439,6 +525,7 @@ div.modal {
     /* Fundo fosco */
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 section.tamanho {
@@ -495,7 +582,7 @@ strong#corzinha {
 }
 
 img#close {
-    background-color: lightgray;
+    background-color: rgb(241, 241, 241);
     margin-right: 15px;
     width: 30px;
     height: 30px;
@@ -660,7 +747,7 @@ div.modalTamanho {
 }
 
 div.perfilDrop {
-    display: block;
+    display: none;
     position: absolute;
     top: 63px;
     right: 0px;
@@ -671,6 +758,51 @@ div.perfilDrop {
     height: 200px;
 }
 
-li.listaDrop {
+li#Perfil {
+    display: flex;
+    align-items: center;
     list-style: none;
+    gap: 1em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+    color: var(--main-color);
+    font-size: 1em;
+}
+
+hr {
+  width: 80%;
+  margin-left: 1.5em;
+}
+
+img#imgDrop {
+    border-radius: 8px;
+    width: 35px;
+    height: 35px;
+}
+
+li.listaDrop {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+}
+
+a.endDrop {
+    text-decoration: none;
+}
+
+a.endDrop:visited {
+    color: var(--main-color);
+}
+
+.menuLink {
+    text-decoration: none;
+}
+
+.menuLink:hover {
+    color: white;
 }

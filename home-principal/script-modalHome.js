@@ -2,7 +2,6 @@ const modal = document.querySelector('.modal');
 const closeBtn = document.querySelector('#close');
 const sectionShare = document.querySelector('.tamanho');
 const containerFrame = document.querySelector('#frameDel');
-const closeBtnEdit = document.querySelector('#closeEdit');
 const buttonEdit = document.querySelector('.edit');
 const secTamanho = document.querySelector('.tamanho');
 const fundoFoscoModal = document.querySelector('.modalTamanho');
@@ -17,7 +16,9 @@ const frame = document.querySelector('.iframeBorder');
 const abrirPerfil = document.querySelector('.openPerfil');
 const perfilDrop = document.querySelector('.perfilDrop');
 const settings = document.querySelectorAll('.listaDrop')[1];
-
+const notificacoes = document.querySelector('#bell');
+const dropNot = document.querySelector('#sizeNot');
+const cadastroCC = document.querySelector('#cc');
 
 window.addEventListener('message', function(event) {
     if (event.data === 'openModal') {
@@ -35,9 +36,21 @@ window.addEventListener('message', function(event) {
     }else if (event.data === 'openEdit'){
         modal.style.display = 'flex';
         containerFrame.style.display = 'flex';
-        containerFrame.src = '../componentes/cadOp/cadOp.html';
+        containerFrame.src = '../componentes/cadOpv2/cadOpc.html';
         containerFrame.width = 800;  
-        containerFrame.height = 640;
+        containerFrame.height = 600;
+    }else if (event.data === 'closeEdit'){
+        modal.style.display = 'none';
+        containerFrame.style.display = 'none';
+    }else if (event.data === 'saveEdit'){
+        modal.style.display = 'none';
+        containerFrame.style.display = 'none';
+    }else if (event.data === 'closeEditOp'){
+        modal.style.display = 'none';
+        containerFrame.style.display = 'none';
+    }else if (event.data === 'salvarEdit'){
+        modal.style.display = 'none';
+        containerFrame.style.display = 'none';
     }
 });
 
@@ -53,6 +66,7 @@ window.onclick = function(event) {
         modal.style.display = "none";
         sectionShare.style.display = "none";
         containerFrame.style.display = "none";
+        dropNot.style.display = "none";
     }else if (event.target == fundoFoscoModal) {
         fundoFoscoModal.style.display = "none";
     }
@@ -101,9 +115,27 @@ shareWithMe.onclick = function(){
 }
 
 abrirPerfil.onclick = function(){
-    perfilDrop.style.display = "flex";
+    if (perfilDrop.style.display === "flex"){
+        perfilDrop.style.display = "none";
+    }else {
+        perfilDrop.style.display = "flex";
+    }
 }
 
-settings.onclick = function(){
-    
+notificacoes.onclick = function(){
+    if (dropNot.style.display === "none"){
+        dropNot.style.display = "flex";
+        modal.style.display = "flex";
+    }else {
+        dropNot.style.display = "none";
+        modal.style.display = "none";
+    }
 }
+
+cadastroCC.addEventListener('click', function(){
+    modal.style.display = 'flex';
+    containerFrame.src = '../componentes/cadOp/cadOp.html';
+    containerFrame.width = 800;  
+    containerFrame.height = 640;
+    containerFrame.style.display = 'flex';
+})

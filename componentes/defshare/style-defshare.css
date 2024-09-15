@@ -10,14 +10,17 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: bisque;
+    margin: 0;
+    overflow: hidden;
 }
 
 section.tamanho {
     display: flex;
-    width: 550px;
-    height: 600px;
+    width: 450px;
+    height: 450px;
     background-color: white;
     border-radius: 15px;
+    border-radius: 12px;
 }
 
 div.purple {
@@ -27,16 +30,25 @@ div.purple {
     border-radius: 12px 0px 0px 12px;
 }
 
+
+header#topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+}
+
+div#linha>hr {
+    width: 100%;
+    margin: 0;
+}
+
+
 div.containerGeral {
     display: flex;
     flex-direction: column;
     width: 97%;
-}
-
-header#topo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 h1#cabeca {
@@ -45,9 +57,20 @@ h1#cabeca {
     margin-left: 10px;
 }
 
+p.sizeP {
+    font-size: var(--main-font-size);
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+strong#corzinha {
+    color: var(--main-color);
+}
+
 img#close {
-    background-color: lightgray;
+    background-color: rgb(241, 241, 241);
     margin-right: 15px;
+    width: 30px;
     height: 30px;
     border-radius: 8px;
 }
@@ -58,10 +81,16 @@ main.orgContent {
     box-sizing: border-box;
     width: 100%;
     padding: 0px 20px 0px 20px;
+    border-radius: 10px;
 }
 
 input#search {
-    height: 35px;
+    background-image: url('../../icons/lupa.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: right;
+    padding-left: 10px;
+    height: 45px;
     width: 100%;
     border: 1px solid lightgray;
     border-radius: 8px;
@@ -75,21 +104,37 @@ div.perfilContent {
 div.ordem {
     display: flex;
     align-items: center;
-    width: 100%;  
+    width: 100%;
+}
+
+div#sizeProfiles {
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+div.profiles {
+    width: 100%;
 }
 
 div.layoutPerfil {
     display: flex;
     align-items: center;
-    width: 450px;
-    height: 60px;
+    width: 300px;
+    height: 50px;
     border: 1px solid lightgrey;
     border-radius: 10px 0px 0px 10px;
-    
+    gap: 1em;
 }
 
-div.layoutPerfil > p {
+div.layoutPerfil>p {
     margin: 0;
+}
+
+img.sizeImg {
+    margin-left: 0.5em;
+    border-radius: 10px;
+    width: 30px;
 }
 
 div.layoutButton {
@@ -97,8 +142,8 @@ div.layoutButton {
     align-items: center;
     justify-content: center;
     border: 1px solid lightgray;
-    width: 180px;
-    height: 60px;
+    padding: 0px 10px;
+    height: 50px;
     border-radius: 0px 10px 10px 0px;
 }
 
@@ -114,7 +159,7 @@ button.edit {
     width: 100px;
     height: 35px;
     border-radius: 9px;
-    
+    padding: 5px;
 }
 
 button.visu {
@@ -129,4 +174,54 @@ button.visu {
     width: 100px;
     height: 35px;
     border-radius: 9px;
+    padding: 5px;
+}
+
+#frameDel {
+    display: none;
+    border-radius: 15px;
+}
+
+div.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+div.dropdown-content {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    background-color: white;
+    width: 110px;
+    height: 100px;
+    border-radius: 15px;
+    top: 45px;
+    right: 5px;
+    z-index: 10;
+}
+
+.dropdown-content .edit:hover {
+    background-color: #381452;
+    cursor: pointer;
+}
+
+.dropdown-content .visu:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+div.modalTamanho {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fundo fosco */
+    justify-content: center;
+    align-items: center;
 }

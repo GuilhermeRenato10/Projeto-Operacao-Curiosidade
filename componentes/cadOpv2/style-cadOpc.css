@@ -1,0 +1,384 @@
+@charset "UTF-8";
+
+:root {
+    --main-color: #6e27a1;
+    --main-font-size: 0.8em;
+    --main-size-icon: 20px 20px;
+    --main-position-icon: 10px center;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: bisque;
+    margin: 0;
+}
+
+section.cadSize {
+    display: flex;
+    width: 800px;
+    height: 600px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+div.containerCad {
+    width: 100%;
+    height: 600px;
+}
+
+div.red {
+    width: 25px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.enable {
+    background-color: green;
+}
+
+.disable {
+     background-color: rgb(150, 42, 42);
+}
+
+header.topoCad {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header.topoCad > p {
+    font-weight: 500;
+    margin-left: 1em;
+}
+
+header.topoCad > img {
+    background-color: rgb(243, 241, 241);
+    height: 30px;
+    border-radius: 8px;
+    margin-right: 1em;
+}
+
+div.linhaCad > hr {
+    margin: 0;
+    margin-left: 1em;
+    width: 95%;
+}
+
+div#attImg {
+    display: flex;
+    gap: 1em;
+    margin-left: 1em;
+    margin-top: 1.5em;
+}
+
+div.styleToggle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 55%;
+}
+
+.toggleCad {
+    position: relative;
+    width: 60px;
+    height: 28px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .toggleCad::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    border-radius: 50%;
+    top: 3px;
+    left: 4px;
+    transition: transform 0.3s ease;
+  }
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .toggleCad {
+    background-color: #4CAF50;
+}
+
+input[type="checkbox"]:checked + .toggleCad::before {
+    transform: translateX(30px);
+}
+
+img#imgCad {
+    border: 1px solid var(--main-color);
+    background-color: #f5e6ff;
+    width: 70px;
+    height: 65px;
+    border-radius: 10px;
+}
+
+div#updateCad {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+button.layoutButtonCad {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-family: 'Poppins';
+    width: 185px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+}
+
+.imgUpCad {
+    height: 20px;
+}
+
+div.scrollbarSection {
+    height: 65%; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+div.mainContentOp {
+    margin-top: 1em;
+    border-radius: 6px;
+    width: 97%;
+    height: 80%;
+    margin-left: 0.5em;
+}
+
+header.topoOp {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    height: 40px;
+    border-radius: 6px 6px 0 0;
+    margin-left: 0.5em;
+}
+
+header.topoOp > p {
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+header.topoOp > img {
+    margin-left: 1em;
+}
+
+div.feelings {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+div.feelings > h3 {
+    color: var(--main-color);
+    font-size: 0.9em;
+    font-weight: 600;
+    margin: 0;
+}
+
+div.feelings > p {
+    font-size: var(--main-font-size);
+}
+
+textarea.areaPadrao {
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    height: 12vh;
+    margin-right: 1em;
+}
+
+#formInfosOp {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin-left: 1em;
+    padding: 10px;
+}
+
+div#seusDados > h2 {
+    color: var(--main-color);
+    font-size: 1em;
+    margin-bottom: 2%;
+}
+
+div.labelSobreOp {
+    display: flex;
+    flex-direction: column;
+}
+
+div#nieOp, div#ndeOp, div#telEndOp, div#pcfOp {
+    display: flex;
+    gap: 2%;
+}
+
+input#nome, input#email, input#acad {
+    width: 300px;
+}
+
+input#age {
+    width: 35px;
+}
+
+input#nUser, input#job {
+    width: 160px;
+}
+
+input#dataNasc, input#estCivil, input#tel, input#position, input#acad {
+    width: 258px;
+}
+
+input#address {
+    width: 445px;
+}
+
+label.labelLayout {
+    color: var(--main-color);
+    font-size: var(--main-font-size);
+}
+
+input.padrao {
+    margin-bottom: 2%;
+    border-radius: 5px;
+    height: 20px;
+    border: 1px solid lightgray;
+    padding: 5px;
+}
+
+header.headerFeel {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px 5px 0px 0px;
+    height: 40px;
+    background-color: var(--main-color);
+}
+
+div.headerLeft {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 1em;
+    gap: 0.5em;
+}
+
+div.headerLeft > p {
+    color: white;
+    font-weight: 500;
+}
+
+div.headerRight {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2em;
+    gap: 1em;
+}
+
+p.styleP {
+    color: var(--main-color);
+    background-color: #e1c6f5;
+    font-size: var(--main-font-size);
+    border-radius: 10px;
+    padding: 1px 15px 1px 6px;
+}
+
+span.numberInt {
+    color: var(--main-color);
+    font-weight: bolder;
+}
+
+div.fundo-branco {
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.interestList {
+    list-style: none;
+    padding: 0;
+    margin-top: 1em;
+}
+
+.interestItem {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 0.5em;
+    height: 20%;
+}
+
+.numberCircle {
+    background-color: var(--main-color);
+    color: white;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 0.7em;
+    margin-right: 1em;
+}
+
+.interestInput {
+    flex-grow: 1;
+    padding: 0.5em;
+    border: none;
+    outline: none;
+}
+
+footer.rodapeCad {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+button#saveCadOp {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 100px;
+    font-family: 'Poppins';
+    font-size: 0.8em;
+    margin-top: 1em;
+    background-color: var(--main-color);
+    border: none;
+    color: white;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 6px;
+    padding: 8px 12px;
+}
+
+img#saveAsCadOp {
+    width: 15px;
+}
+
+h3.estiloIconsOpc {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+img.iconsOpc {
+    width: 24px;
+}
+
+div.linhaCadFooter {
+    margin-top: 2em;
+}
+
+strong {
+    color: var(--main-color);
+}

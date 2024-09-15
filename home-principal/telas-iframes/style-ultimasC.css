@@ -94,7 +94,7 @@ div.status > p {
 i.arroba {
     font-family: var(--main-font);
     font-size: 2.5vw;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--main-color);
 }
 
@@ -121,7 +121,7 @@ div.feelings {
 }
 
 div.feelings > p {
-    background-color: #dbc1ee;
+    background-color: #f3e9fa;
     border-radius: 12px;
     padding: 0.1em 0.6em;
     font-weight: 600;

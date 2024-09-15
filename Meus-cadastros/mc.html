@@ -19,17 +19,39 @@
                 <li id="cc" class="items">Cadastrar Curiosidade</li>
                 <hr>
                 <li id="mc" class="items">Meus Cadastros</li>
-                <li id="rs" class="items">Relatórios</li>
+                <li id="rs" class="items"><a href="../Relatorios/reports.html">Relatórios</a></li>
                 <hr>
             </ul>
             <div id="footerDiv"></div>
-        </nav>   
+        </nav>
         <div id="contentMain">
-            <header>
-                <input type="text" name="search" id="search" placeholder="Pesquise Aqui">
-                <input type="checkbox" id="switch" /><label class="toggle" for="switch"></label>
+            <header id="cabecaHome">
+                <input type="text" name="searchHome" id="searchHome" placeholder="Pesquise Aqui">
+                <input class="toggleModdle" type="checkbox" id="switch" /><label class="styleToggle" for="switch"></label>
                 <div id="bell">
-
+                </div>
+                <div class="notifications">
+                    <section id="sizeNot">
+                        <header id="topoNot">
+                                <p>Notificações</p>
+                                <div id="styleNumber">5</div>
+                        </header>
+                        <div id="linhaNot">
+                            <hr>
+                        </div>
+                        <div class="contentNots">
+                            <div class="sizeNot">
+                                <img class="imgNot" src="../../imgs/Pamela-Fernandes.png" alt="">
+                                <div class="columnNot">
+                                    <div class="linhaNot">
+                                        <p>@pam.mattos</p>
+                                        <p>2h</p>
+                                    </div>
+                                    <p>compartilhou 3 operações com você</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
                 <div class="perfil">
                     <div class="fotoPerfil">
@@ -40,10 +62,19 @@
                         <p>[Administrador]</p>
                     </div>
                     <div class="expand">
-                        <img src="../icons/expand.png" alt="expandir">
+                        <img class="openPerfil" src="../icons/expand.png" alt="expandir">
+                    </div>
+                    <div class="perfilDrop">
+                        <ul>
+                            <li id="Perfil"><img id="imgDrop" src="../imgs/Eduardo-Rodrigues.png" alt="">Perfil</li>
+                            <hr class="lineDrop">
+                            <li class="listaDrop"><img src="../icons/settings.svg" alt=""><a class="endDrop" href="../Settings/configs.html">Configurações</a></li>
+                            <hr class="lineDrop">
+                            <li class="listaDrop"><img src="../icons/exit.svg" alt=""><a class="endDrop" href="../Tela-login/index.html">Sair</a></li>
+                        </ul>
                     </div>
                 </div>
-            </header> 
+            </header>
             <main class="analise">
                 <div class="informacoes">
                     <div class="contentRight">
@@ -110,22 +141,14 @@
                         <div class="situacao">
                             <p class="situationLayout">Ativo</p>
                         </div>
-                    </div>
-                    <div class="infoUsers">
-                        <div class="code">
-                            <p class="textLayout2">25-01514</p>
-                        </div>
-                        <div class="name">
-                            <p class="textLayout2">Pamela Fernandes Mattos</p>
-                        </div>
-                        <div class="email">
-                            <p class="textLayout2">pamelafm@fakemail.com</p>
-                        </div>
-                        <div class="data">
-                            <p class="textLayout2">05/09/2024</p>
-                        </div>
-                        <div class="situacao">
-                            <p class="situationLayout">Ativo</p>
+                        <div class="dropButton">
+                            <button class="details"><img class="imgTp" src="../icons/tpwhite.svg" alt="">Detalhes
+                            </button>
+                            <ul id="options">
+                                <li id="altDrop" class="styleOptions">Alterar<img class="sizeImgDrop" src="../icons/pencilW.svg" alt=""></li>
+                                <li id="shareDrop" class="styleOptions">Compartilhar<img class="sizeImgDrop" src="../icons/keyboardp.svg" alt=""></li>
+                                <li id="removeDrop" class="styleOptions">Remover<img class="sizeImgDrop" src="../icons/delete_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""></li>
+                            </ul>
                         </div>
                     </div>
                     <div class="infoUsers">
@@ -144,6 +167,7 @@
                         <div class="situacao">
                             <p class="situationLayout">Ativo</p>
                         </div>
+                        <button class="details"><img class="imgTp" src="../icons/tpwhite.svg" alt="">Detalhes</button>
                     </div>
                     <div class="infoUsers">
                         <div class="code">
@@ -161,6 +185,7 @@
                         <div class="situacao">
                             <p class="situationLayout">Ativo</p>
                         </div>
+                        <button class="details"><img class="imgTp" src="../icons/tpwhite.svg" alt="">Detalhes</button>
                     </div>
                     <div class="infoUsers">
                         <div class="code">
@@ -178,6 +203,7 @@
                         <div class="situacao">
                             <p class="situationLayout">Ativo</p>
                         </div>
+                        <button class="details"><img class="imgTp" src="../icons/tpwhite.svg" alt="">Detalhes</button>
                     </div>
                     <div class="infoUsers">
                         <div class="code">
@@ -195,6 +221,25 @@
                         <div class="situacao">
                             <p class="situationLayout">Ativo</p>
                         </div>
+                        <button class="details"><img class="imgTp" src="../icons/tpwhite.svg" alt="">Detalhes</button>
+                    </div>
+                    <div class="infoUsers">
+                        <div class="code">
+                            <p class="textLayout2">25-01514</p>
+                        </div>
+                        <div class="name">
+                            <p class="textLayout2">Pamela Fernandes Mattos</p>
+                        </div>
+                        <div class="email">
+                            <p class="textLayout2">pamelafm@fakemail.com</p>
+                        </div>
+                        <div class="data">
+                            <p class="textLayout2">05/09/2024</p>
+                        </div>
+                        <div class="situacao">
+                            <p class="situationLayout">Ativo</p>
+                        </div>
+                        <button class="details"><img class="imgTp" src="../icons/tpwhite.svg" alt="">Detalhes</button>
                     </div>
                 </div>
                 <div class="paginacao">
@@ -210,7 +255,18 @@
                         <img class="purple" src="../icons/last page.svg" alt="">
                     </div>
                 </div>
+                <footer>
+                    <div id="styleFooter">
+                        <p>Powered by</p>
+                        <img src="../imgs/forlogic logo.svg" alt="">
+                    </div>
+                </footer>
             </main>
     </div>
+    <div class="modal">
+        <iframe class="framesMC" src="../componentes/cadOpv2/cadOpc.html" frameborder="0" width="800" height="600"></iframe>
+    </div>
+    
+    <script src="script-mc.js"></script>
 </body>
 </html>

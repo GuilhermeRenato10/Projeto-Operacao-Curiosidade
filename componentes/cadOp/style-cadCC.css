@@ -26,9 +26,8 @@ div.containerCad {
     width: 100%;
 }
 
-div.purple {
+div.red {
     width: 25px;
-    background-color: rgb(150, 42, 42);
     border-radius: 15px 0px 0px 15px;
 }
 
@@ -75,6 +74,53 @@ div#updateCad {
     display: flex;
     flex-direction: column;
     gap: 1em;
+}
+
+div.styleToggle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 55%;
+}
+
+.enable {
+    background-color: green;
+}
+
+.disable {
+     background-color: rgb(150, 42, 42);
+}
+
+.toggleCad {
+    position: relative;
+    width: 60px;
+    height: 28px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .toggleCad::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    border-radius: 50%;
+    top: 3px;
+    left: 4px;
+    transition: transform 0.3s ease;
+  }
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .toggleCad {
+    background-color: #4CAF50;
+}
+
+input[type="checkbox"]:checked + .toggleCad::before {
+    transform: translateX(30px);
 }
 
 button.layoutButtonCad {
@@ -248,6 +294,7 @@ div.fundo-branco {
     list-style: none;
     padding: 0;
     margin-top: 1em;
+    overflow-y: auto;
 }
 
 .interestItem {
@@ -305,4 +352,10 @@ button#saveCadOp {
 
 img#saveAsCadOp {
     width: 15px;
+}
+
+div.btnFooter {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1.5em;
 }

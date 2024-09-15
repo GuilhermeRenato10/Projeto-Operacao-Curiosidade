@@ -9,66 +9,84 @@
 </head>
 <body>
     <section class="tamanho">
+        <div class="modalTamanho"></div>
         <div class="purple">
-
         </div>
         <div class="containerGeral">
             <header id="topo">
-                    <h1 id="cabeca">Definição de compartilhamento</h1>
-                    <img id="close" src="../../icons/close.svg" alt="">
+                <h1 id="cabeca">Definição de compartilhamento</h1>
+                <img id="close" src="../../icons/close.svg" alt="">
             </header>
             <div id="linha">
                 <hr>
             </div>
             <main class="orgContent">
-                <p>Insira o nome do usuário que deseja incluir em sua lista
-                    de compartilhamento e pressione a tecla <strong>Enter</strong>
+                <p class="sizeP">Insira o nome do usuário que deseja incluir em sua lista
+                    de compartilhamento e pressione a tecla <strong id="corzinha">Enter</strong>
                 </p>
                 <input type="text" name="search" id="search" placeholder="Pesquise aqui">
-                <p>Selecione um usuário para definir o modo de
+                <p class="sizeP">Selecione um usuário para definir o modo de
                     compartilhamento de sua Operação Curiosidade.
                 </p>
-                <div class="profiles">
+                <div id="sizeProfiles">
+                    <div class="profiles">
                         <div class="perfilContent">
                             <div class="ordem">
                                 <div class="layoutPerfil">
-                                    <img src="../../imgs/Pamela-Fernandes.png" alt="">
-                                    <p>Pamela Matos Fernandes</p>
+                                    <img class="sizeImg" src="../../imgs/foto-pam.png" alt="">
+                                    <p class="sizeP">Pamela Matos Fernandes</p>
+                                </div>
+                                <div class="dropdown">
+                                    <div class="layoutButton">
+                                        <button class="edit">Editar
+                                            <img class="iconBtnEdit" src="../../icons/keyboardw.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="dropdown-content">
+                                        <button class="edit">Editar
+                                            <img class="tpWdd" src="../../icons/keyboardw.svg" alt="">
+                                        <button class="visu">Visualizar
+                                            <img class="tpPdd" src="../../icons/keyboardp.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profiles">
+                        <div class="perfilContent">
+                            <div class="ordem">
+                                <div class="layoutPerfil">
+                                    <img class="sizeImg" src="../../imgs/foto-gui.png" alt="">
+                                    <p class="sizeP">Guilherme Silva Almeida</p>
                                 </div>
                                 <div class="layoutButton">
-                                    <button class="edit">Editar<img src="../../icons/keyboardw.svg" alt=""></button>
+                                    <button class="edit">Editar
+                                        <img class="tpW" src="../../icons/keyboardw.svg" alt="">
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                </div>
-                <div class="profiles">
-                    <div class="perfilContent">
-                        <div class="ordem">
-                            <div class="layoutPerfil">
-                                <img src="" alt="">
-                                <p>Pamela Matos Fernandes</p>
-                            </div>
-                            <div class="layoutButton">
-                                <button class="edit">Editar<img src="../../icons/keyboardw.svg" alt=""></button>
+                    </div>
+                    <div class="profiles">
+                        <div class="perfilContent">
+                            <div class="ordem">
+                                <div class="layoutPerfil">
+                                    <img class="sizeImg" src="../../imgs/foto-lu.png" alt="">
+                                    <p class="sizeP">Luiza Souza Carvalho</p>
+                                </div>
+                                <div class="layoutButton">
+                                    <button class="edit">Editar
+                                        <img class="tpW" src="../../icons/keyboardw.svg" alt="">
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
-            </div>
-            <div class="profiles">
-                <div class="perfilContent">
-                    <div class="ordem">
-                        <div class="layoutPerfil">
-                            <img src="" alt="">
-                            <p>Pamela Matos Fernandes</p>
-                        </div>
-                        <div class="layoutButton">
-                            <button class="visu">Visualizar<img src="../../icons/keyboardp.svg" alt=""></button>
-                        </div>
-                    </div>
                 </div>
-            </div>
             </main>
         </div>
     </section>
+    <script src="scripts-defshare.js"></script>
 </body>
 </html>

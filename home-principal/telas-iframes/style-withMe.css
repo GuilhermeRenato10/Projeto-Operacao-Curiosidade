@@ -71,7 +71,7 @@ div.infos {
 }
 
 p.email {
-    margin-top: 0.2em;
+    margin-top: 0.5em;
     color: rgb(172, 168, 168);
 }
 
@@ -94,7 +94,7 @@ div.status > p {
 i.arroba {
     font-family: var(--main-font);
     font-size: 2.5vw;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--main-color);
 }
 
@@ -121,12 +121,12 @@ div.feelings {
 }
 
 div.feelings > p {
-    background-color: #dbc1ee;
+    background-color: #f3e9fa;
     border-radius: 12px;
     padding: 0.1em 0.6em;
     font-weight: 600;
     font-family: var(--main-font);
-    font-size: 0.7em;
+    font-size: 0.9em;
     color: var(--main-color);
 }
 
@@ -134,6 +134,10 @@ img.iconF {
     width: 15px;
     height: 15px;
     vertical-align: middle;
+}
+
+img.iconD {
+    width: 20px;
 }
 
 div.details {
@@ -146,6 +150,8 @@ div.databox {
     display: flex;
     align-items: center;
     gap: 0.30em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 div.databox > p {
@@ -160,12 +166,16 @@ div.whoShare {
     gap: 0.5em;
 }
 
+p.destino {
+    font-size: var(--main-font-size);
+}
+
 span.arrobas {
     color: var(--main-color);
 }
 
 img.imgShare {
-    width: 25px;
+    width: 20px;
 }
 
 

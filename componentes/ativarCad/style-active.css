@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+:root {
+    --main-color: #6e27a1;
+    --main-font-size: 0.8em;
+    --main-size-icon: 20px 20px;
+    --main-position-icon: 10px center;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: bisque;
+    margin: 0;
+}
+
+section.sizeDel {
+    display: flex;
+    width: 450px;
+    height: 200px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+div.purpleDel {
+    width: 30px;
+    height: 100%;
+    background-color: var(--main-color);
+    border-radius: 15px 0px 0px 15px;
+}
+
+p#titleDel {
+    margin-left: 1em;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+main.delContent {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px 20px 20px;
+}
+
+p#expDel {
+    font-family: var(--main-font-size);
+    font-size: var(--main-font-size);
+}
+
+span#styleP {
+    color: var(--main-color);
+}
+
+div.buttonsActive {
+    display: flex;
+    gap: 1em;
+    justify-content: flex-end;
+    margin-right: 15px;
+}
+
+button#delCancel {
+    font-family: 'Poppins';
+    background-color: var(--main-color);
+    border: none;
+    color: white;
+    border-radius: 8px;
+    padding: 2px 25px 2px 25px;
+}
+
+button#delActive {
+    display: flex;
+    align-items: center;
+    color: #63b363;
+    border: 1px solid rgb(99, 179, 99);
+    border-radius: 8px;
+    gap: 0.3em;
+    font-family: 'Poppins';
+    background-color: rgb(226, 252, 226);
+    padding: 2px 20px 2px 20px;
+}
+
+img#trashDel {
+    height: 15px;
+}
+
+strong {
+    color: var(--main-color);
+}
