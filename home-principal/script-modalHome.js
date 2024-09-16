@@ -153,23 +153,3 @@ cadastroCC.addEventListener('click', function(){
 })
 
 
-
-const toggleButton = document.getElementById('switch');
-const body = document.body;
-
-toggleButton.addEventListener('change', () => {
-    body.classList.toggle('dark-mode');
-
-    // Altera a cor dos elementos específicos conforme o estado
-    if (body.classList.contains('dark-mode')) {
-        localStorage.setItem('theme', 'dark'); // Armazena o modo dark no localStorage
-    } else {
-        localStorage.setItem('theme', 'light'); // Armazena o modo claro
-    }
-});
-
-// Verifica se há um tema armazenado no localStorage ao carregar a página
-if (localStorage.getItem('theme') === 'dark') {
-    body.classList.add('dark-mode');
-    toggleButton.checked = true;
-}

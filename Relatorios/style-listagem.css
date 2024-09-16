@@ -159,62 +159,6 @@ input#search {
     margin-top: 0.8%;
 }
 
-input#search:focus {
-    background-image: none;
-}
-
-input[type=checkbox] {
-    height: 0;
-    width: 0;
-    visibility: hidden;
-}
-
-label.toggle {
-    cursor: pointer;
-    width: 50px;
-    height: 27px;
-    background: rgb(185, 185, 185);
-    display: block;
-    border-radius: 100px;
-    position: relative;
-    margin-left: 2%;
-    margin-top: 1%;
-    background-image: url('../icons/brush.png');
-    background-repeat: no-repeat;
-    background-size: 19px 19px;
-    background-position: 10% center;
-}
-
-label.toggle::after {
-    content: '';
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    width: 21px;
-    height: 21px;
-    background: #fff;
-    border-radius: 50px;
-    transition: 0.3s;
-    background-image: url('../icons/brush.png'); /* Opcional: Ícone adicional, se necessário */
-    background-repeat: no-repeat;
-    background-size: 15px 15px;
-    background-position: center;
-    z-index: 1; /* Garantir que a bolinha branca esteja acima */
-}
-
-input:checked + label.toggle {
-    background: #6e27a1
-}
-
-input:checked + label.toggle::after {
-    left: calc(100% - 5px); /* Ajuste para mover a bolinha branca para a direita */
-    transform: translateX(-100%);
-}
-
-label.toggle:active::after {
-    width: 25px;
-}
-
 div#bell {
     background-image: url('../icons/bell.png');
     background-repeat: no-repeat;
@@ -224,7 +168,7 @@ div#bell {
     width: 5%;
     height: 50%;
     margin-top: 1%;
-    margin-left: 1%;
+    margin-left: 3em;
 }
 
 div.perfil {
@@ -236,7 +180,7 @@ div.perfil {
     border-radius: 10px;
     border: 1px solid lightgray;
     margin-top: 1%;
-    margin-left: 1.5%;
+    margin-left: 3em;
     box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.103);
     align-items: center; 
 }

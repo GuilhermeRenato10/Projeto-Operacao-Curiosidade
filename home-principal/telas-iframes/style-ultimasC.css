@@ -181,16 +181,19 @@ div.sde {
 button.btnShare {
     background-color: white;
     border: none;
+    cursor: pointer;
 }
 
 button.btnDelete {
     background-color: white;
     border: none;
+    cursor: pointer;
 }
 
 button.btnEdit {
     background-color: white;
     border: none;
+    cursor: pointer;
 }
 
 img.iconC {
