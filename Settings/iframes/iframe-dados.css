@@ -57,7 +57,7 @@ input#nome, input#email, input#acad {
 }
 
 input#age {
-    width: 5vw;
+    width: 6vw;
 }
 
 input#nUser, input#job {
@@ -128,4 +128,9 @@ textarea.areaPadrao {
 
 strong.enterP {
     color: var(--main-color);
+}
+
+input::placeholder {
+    color: black; 
+    opacity: 1; 
 }
