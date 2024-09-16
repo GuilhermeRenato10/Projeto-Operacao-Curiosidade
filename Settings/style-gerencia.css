@@ -64,34 +64,34 @@ img#logoOC {
     font-size: var(--main-font-size);
     margin: 1em;
     color: var(--main-color);
-    width: 75%;
-    padding: 2vh 2vw 2vh 4vw;
+    width: 80%;
+    padding: 1em 1em 1em 3em;
     cursor: pointer;
 }
 
 li#vg {
-    background-image: url('../icons/grid-dashboard.svg');
+    background-image: url('../icons/space_dashboard_24dp_6E27A1_FILL1_wght400_GRAD0_opsz24.svg');
     background-repeat: no-repeat;
     background-position: var(--main-position-icon);
     background-size: var(--main-size-icon);
 }
 
 li#cc {
-    background-image: url('../icons/add-box.svg');
+    background-image: url('../icons/addBoxP.svg');
     background-repeat: no-repeat;
     background-position: var(--main-position-icon);
     background-size: var(--main-size-icon);
 }
 
 li#mc {
-    background-image: url('../icons/char-list.svg');
+    background-image: url('../icons/charListP.svg');
     background-repeat: no-repeat;
     background-position: var(--main-position-icon);
     background-size: var(--main-size-icon);
 }
 
 li#rs {
-    background-image: url('../icons/insert-char.svg');
+    background-image: url('../icons/insert_chart_24dp_6E27A1_FILL1_wght400_GRAD0_opsz24.svg');
     background-repeat: no-repeat;
     background-position: var(--main-position-icon);
     background-size: var(--main-size-icon);
@@ -112,6 +112,15 @@ li#mc:hover {
 li#rs:hover {
     background-image: url('../icons/insert-white.png');
 }
+
+a.linkNav{
+    text-decoration: none;
+}
+
+a.linkNav:hover{
+    color: white;
+}
+
 
 #sidebar ul li.items:hover {
     background-color: var(--main-color); 
@@ -420,7 +429,7 @@ button.equal {
 button#buttonUser {
     background-color: var(--main-color);
     color: white;
-    height: 45px;
+    height: 5vh;
     width: 111px;
     border: none;
     border-radius: 5px;
@@ -477,6 +486,19 @@ p.stateColumn {
     margin-left: 2%;
 }
 
+p.statusLayout1 {
+    font-size: 0.7em;
+    color: green;
+    text-align: center;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    padding: 0px 3px;
+    background-color: rgb(207, 255, 207);
+    cursor: pointer;
+    margin-left: 2.3em;
+    width: 65px;
+}
+
 p#statusLayout1, p#statusLayout2, p#statusLayout3, p#statusLayout4, p#statusLayout5 {
     font-size: 0.7em;
     color: green;
@@ -485,9 +507,10 @@ p#statusLayout1, p#statusLayout2, p#statusLayout3, p#statusLayout4, p#statusLayo
     border-radius: 8px;
     padding: 0px 3px;
     background-color: rgb(207, 255, 207);
+    cursor: pointer;
 } 
 
-p#statusLayoutRed {
+p.statusLayoutRed {
     font-family: var(--main-font);
     font-size: 0.7em;
     color: red;
@@ -496,6 +519,9 @@ p#statusLayoutRed {
     border-radius: 8px;
     padding: 0px 3px;
     background-color: rgb(252, 200, 200);
+    cursor: pointer;
+    margin-left: 2.3em;
+    width: 65px;
 }
 
 p.typeColumn {
@@ -535,24 +561,6 @@ div.gerenciamento {
     border-radius: 5px;
     width: 100vw;
     height: 7vh;
-}
-
-button.details {
-    margin-left: 2%;
-    display: flex;
-    align-items: center;
-    background-color: var(--main-color);
-    color: white;
-    font-family: 'Poppins';
-    padding: 0px 10px;
-    border: none;
-    border-radius: 5px;
-    height: 4vh;
-}
-
-img.imgTp {
-    color: white;
-    height: 15px;
 }
 
 div.paginacao {
@@ -640,4 +648,75 @@ div.modal {
 
 #frameCad {
     border-radius: 15px;
+    display: none;
+}
+
+.dropButton {
+    position: relative;
+}
+
+button.details {
+    margin-left: 1em;
+    display: flex;
+    align-items: center;
+    background-color: var(--main-color);
+    color: white;
+    font-family: 'Poppins';
+    padding: 0px 10px;
+    border: none;
+    border-radius: 5px;
+    height: 4vh;
+}
+
+img.imgTp {
+    color: white;
+    height: 15px;
+}
+
+#options {
+    position: absolute;
+    top: 30px;
+    right: 65px;
+    background-color: white;
+    border: 10px;
+    display: none;
+    z-index: 10;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.styleOptions {
+    
+    width: 9vw;
+    height: 5vh;
+    list-style: none;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+#altDrop {
+    background-color: var(--main-color);
+    color: white;
+    margin-bottom: 0.5em;
+}
+
+#shareDrop {
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    margin-bottom: 0.5em;
+}
+
+#removeDrop {
+    background-color: rgb(248, 180, 180);
+    border: 1px solid rgb(126, 21, 21);
+    color: rgb(126, 21, 21)
+}
+
+.sizeImgDrop {
+    width: 15px;
+    height: 15px;
 }

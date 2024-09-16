@@ -125,3 +125,7 @@ textarea.areaPadrao {
     border-radius: 8px;
     height: 17vh;
 }
+
+strong.enterP {
+    color: var(--main-color);
+}

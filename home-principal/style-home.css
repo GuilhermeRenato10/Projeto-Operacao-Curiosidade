@@ -225,7 +225,10 @@ label:active::after {
 }
 
 div.notifications {
-    position: relative;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: -119px;
 }
 
 div#bell {
@@ -234,10 +237,10 @@ div#bell {
     background-position: center;
     background-size: var(--main-size-icon);
     background-color: white;
-    width: 5%;
-    height: 50%;
-    margin-top: 1%;
-    margin-left: 1%;
+    width: 25px;
+    height: 25px;
+    margin-top: 0.5em;
+    margin-left: 2em;
     cursor: pointer;
 }
 
@@ -835,3 +838,6 @@ a.endDrop:visited {
     color: white;
 }
 
+div.dropBell {
+    position: relative;
+}

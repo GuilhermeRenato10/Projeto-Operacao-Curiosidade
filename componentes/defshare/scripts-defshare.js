@@ -3,7 +3,12 @@ const fundoFoscoModal = document.querySelector('.modalTamanho');
 const dropDownC = document.querySelector('.dropdown-content');
 const btnVisudrop = document.querySelector('.visu');
 const btnEditdrop = document.querySelectorAll('.edit')[1];
+const closeWindow = document.querySelector('#close');
 
+
+closeWindow.addEventListener('click', function(){
+    window.parent.postMessage('fecharJanela', '*');
+})
 
 buttonEdit.onclick = function() {
     window.parent.postMessage('abrirDropDown', '*');

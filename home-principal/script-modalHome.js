@@ -19,6 +19,18 @@ const settings = document.querySelectorAll('.listaDrop')[1];
 const notificacoes = document.querySelector('#bell');
 const dropNot = document.querySelector('#sizeNot');
 const cadastroCC = document.querySelector('#cc');
+const openNot = document.querySelector('.sizeNot');
+
+
+openNot.addEventListener('click', function (){
+    modal.style.display = "none";
+    dropNot.style.display = "none";
+    shareWithMe.classList.add('selected');
+    ultimasCad.classList.remove('selected');
+    shareByMe.classList.remove('selected');
+    frame.src = './telas-iframes/shareCom.html'
+})
+
 
 window.addEventListener('message', function(event) {
     if (event.data === 'openModal') {
@@ -139,3 +151,25 @@ cadastroCC.addEventListener('click', function(){
     containerFrame.height = 640;
     containerFrame.style.display = 'flex';
 })
+
+
+
+const toggleButton = document.getElementById('switch');
+const body = document.body;
+
+toggleButton.addEventListener('change', () => {
+    body.classList.toggle('dark-mode');
+
+    // Altera a cor dos elementos específicos conforme o estado
+    if (body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme', 'dark'); // Armazena o modo dark no localStorage
+    } else {
+        localStorage.setItem('theme', 'light'); // Armazena o modo claro
+    }
+});
+
+// Verifica se há um tema armazenado no localStorage ao carregar a página
+if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+    toggleButton.checked = true;
+}

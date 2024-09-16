@@ -14,12 +14,12 @@
                 <img id="logoOC" src="./imgLogo/logoescrita.svg" alt="logo operação-curiosidade">
             </div>
             <ul>
-                <li id="vg" class="items">Visão Geral</li>
+                <li id="vg" class="items"><a class="linkNav" href="../home-principal/indexhome.html">Visão Geral</a></li>
                 <hr>
                 <li id="cc" class="items">Cadastrar Curiosidade</li>
                 <hr>
-                <li id="mc" class="items">Meus Cadastros</li>
-                <li id="rs" class="items">Relatórios</li>
+                <li id="mc" class="items"><a class="linkNav" href="../Meus-cadastros/mc.html">Meus Cadastros</a></li>
+                <li id="rs" class="items"><a class="linkNav" href="../Relatorios/listagem.html">Relatórios</a></li>
                 <hr>
             </ul>
             <div id="footerDiv"></div>
@@ -104,9 +104,18 @@
                         <p class="nameColumn">Pamela Fernandes Mattos</p>
                         <p class="emailColumn">pamelafm@fakemail.com</p>
                         <p class="dateColumn">10/09/2024</p>
-                        <p id="statusLayout1" class="stateColumn">Ativo</p>
+                        <p class="statusLayout1" class="stateColumn">Ativo</p>
                         <p id="operator1" class="typeColumn">Operador</p>
-                        <button class="details"><img class="imgTp" src="../icons/tpwhite.svg" alt="">Detalhes</button>
+
+                        <div class="dropButton">
+                            <button class="details"><img class="imgTp" src="../icons/tpwhite.svg" alt="">Detalhes
+                            </button>
+                            <ul id="options">
+                                <li id="altDrop" class="styleOptions">Alterar<img class="sizeImgDrop" src="../icons/pencilW.svg" alt=""></li>
+                                <li id="shareDrop" class="styleOptions">Compartilhar<img class="sizeImgDrop" src="../icons/keyboardp.svg" alt=""></li>
+                                <li id="removeDrop" class="styleOptions">Inativar<img class="sizeImgDrop" src="../icons/remove.svg" alt=""></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="gerenciamento">
                         <input class="checks" type="checkbox" name="check" id="check1">
@@ -144,7 +153,7 @@
                         <p class="nameColumn">Pamela Fernandes Mattos</p>
                         <p class="emailColumn">pamelafm@fakemail.com</p>
                         <p class="dateColumn">10/09/2024</p>
-                        <p id="statusLayoutRed" class="stateColumn">Inativo</p>
+                        <p class="statusLayoutRed" class="stateColumn">Inativo</p>
                         <p id="operator4" class="typeColumn">Operador</p>
                         <button class="details"><img class="imgTp" src="../icons/tpwhite.svg" alt="">Detalhes</button>
                     </div>

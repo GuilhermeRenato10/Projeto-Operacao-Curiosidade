@@ -62,37 +62,51 @@ img#logoOC {
     font-size: var(--main-font-size);
     margin: 1em;
     color: var(--main-color);
-    width: 75%;
-    padding: 2vh 2vw 2vh 4vw;
+    width: 80%;
+    padding: 1em 1em 1em 3em;
     cursor: pointer;
 }
 
 li#vg {
-    background-image: url('../icons/grid-dashboard.svg');
+    background-image: url('../icons/space_dashboard_24dp_6E27A1_FILL1_wght400_GRAD0_opsz24.svg');
     background-repeat: no-repeat;
     background-position: var(--main-position-icon);
     background-size: var(--main-size-icon);
 }
 
 li#cc {
-    background-image: url('../icons/add-box.svg');
+    background-image: url('../icons/addBoxP.svg');
     background-repeat: no-repeat;
     background-position: var(--main-position-icon);
     background-size: var(--main-size-icon);
 }
 
 li#mc {
-    background-image: url('../icons/char-list.svg');
+    background-image: url('../icons/charListP.svg');
     background-repeat: no-repeat;
     background-position: var(--main-position-icon);
     background-size: var(--main-size-icon);
 }
 
 li#rs {
-    background-image: url('../icons/insert-char.svg');
+    background-image: url('../icons/insert_chart_24dp_6E27A1_FILL1_wght400_GRAD0_opsz24.svg');
     background-repeat: no-repeat;
     background-position: var(--main-position-icon);
     background-size: var(--main-size-icon);
+}
+
+li#cg {
+    background-image: url('../icons/settings_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg');
+    background-repeat: no-repeat;
+    background-position: var(--main-position-icon);
+    background-size: var(--main-size-icon);
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 10px;
+}
+
+p#config {
+    color: white;
 }
 
 li#vg:hover {
@@ -110,6 +124,7 @@ li#mc:hover {
 li#rs:hover {
     background-image: url('../icons/insert-white.png');
 }
+
 
 #sidebar ul li.items:hover {
     background-color: var(--main-color); 
@@ -168,6 +183,12 @@ input[type=checkbox] {
     height: 0;
     width: 0;
     visibility: hidden;
+}
+
+input#adm[type=checkbox] {
+    height: 18px;
+    width: 18px;
+    visibility: visible;
 }
 
 label.toggle {
@@ -418,7 +439,9 @@ input.layoutPass {
 
 div#admin {
     display: flex;
+    align-items: center;
     flex-direction: row;
+    gap: 0.5em;
 }
 
 button#save {
@@ -435,4 +458,12 @@ button#save {
     border: none;
     border-radius: 8px;
     margin-top: 8%;
+}
+
+a.navItem {
+    text-decoration: none;
+}
+
+a.navItem:hover {
+    color: white;
 }

@@ -752,6 +752,7 @@ button.details {
     border: none;
     border-radius: 5px;
     height: 4vh;
+    cursor: pointer;
 }
 
 img.imgTp {
@@ -790,7 +791,6 @@ div#styleFooter > img {
 }
 
 .styleOptions {
-    
     width: 9vw;
     height: 5vh;
     list-style: none;
@@ -800,6 +800,7 @@ div#styleFooter > img {
     justify-content: space-between;
     border-radius: 8px;
     padding: 5px;
+    cursor: pointer;
 }
 
 #altDrop {
@@ -828,4 +829,12 @@ div#styleFooter > img {
 .framesMC {
     display: none;
     border-radius: 16px;
+}
+
+a.navMc {
+    text-decoration: none;
+}
+
+a.navMc:hover {
+    color: white;
 }

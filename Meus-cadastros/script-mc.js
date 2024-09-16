@@ -74,15 +74,28 @@ window.addEventListener('message', function(event) {
      if (event.data === 'closeEdit'){
         modal.style.display = 'none';
         containerFrame.style.display = 'none';
+        listaOptions.style.display = "none";
+        listaOptions.style.zIndex = '10';
     }else if (event.data === 'closeEditOp'){
         modal.style.display = 'none';
         containerFrame.style.display = 'none';
+        listaOptions.style.display = "none";
+        listaOptions.style.zIndex = '10';
     }else if (event.data === 'saveEdit'){
         modal.style.display = 'none';
         containerFrame.style.display = 'none';
+        listaOptions.style.display = "none";
+        listaOptions.style.zIndex = '10';
     }else if (event.data === 'cancelarDel'){
         modal.style.display = 'none';
         containerFrame.style.display = 'none';
+        listaOptions.style.display = "none";
+        listaOptions.style.zIndex = '10';
+    }else if (event.data === 'fecharJanela'){
+        modal.style.display = 'none';
+        containerFrame.style.display = 'none';
+        listaOptions.style.display = "none";
+        listaOptions.style.zIndex = '10';
     }
 });
 
@@ -92,5 +105,6 @@ window.onclick = function(event) {
         sectionShare.style.display = "none";
         containerFrame.style.display = "none";
         dropNot.style.display = "none";
+        listaOptions.style.display = 'none';
     }
 }
