@@ -358,6 +358,7 @@ div.infoUsers {
     border-radius: 8px;
     margin-top: 0.1vh;
     padding: 1.2vw;
+    cursor: pointer;
 }
 
 p.textLayout2 {

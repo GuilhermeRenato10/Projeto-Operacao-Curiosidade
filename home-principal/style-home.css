@@ -195,6 +195,7 @@ section#sizeNot {
     margin: 50px;
     width: 330px;
     height: 320px;
+    cursor: pointer;
 }
 
 
@@ -648,6 +649,7 @@ button.edit {
     height: 35px;
     border-radius: 9px;
     padding: 5px;
+    cursor: pointer;
 }
 
 button.visu {
@@ -663,6 +665,7 @@ button.visu {
     height: 35px;
     border-radius: 9px;
     padding: 5px;
+    cursor: pointer;
 }
 
 #frameDel {

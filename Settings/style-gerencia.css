@@ -371,6 +371,7 @@ button#buttonUser {
     border-radius: 5px;
     font-family: 'Poppins';
     font-size: 0.7em;
+    cursor: pointer;
 }
 
 div#search {
@@ -602,6 +603,7 @@ button.details {
     border: none;
     border-radius: 5px;
     height: 4vh;
+    cursor: pointer;
 }
 
 img.imgTp {

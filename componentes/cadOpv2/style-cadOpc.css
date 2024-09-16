@@ -359,6 +359,7 @@ button#saveCadOp {
     margin-right: 1em;
     border-radius: 6px;
     padding: 8px 12px;
+    cursor: pointer;
 }
 
 img#saveAsCadOp {
