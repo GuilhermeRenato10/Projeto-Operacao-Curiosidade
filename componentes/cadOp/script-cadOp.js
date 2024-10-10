@@ -38,7 +38,6 @@ btnToggle.addEventListener('click', function () {
     }
 })
 
-
 let contadorInt = 5;
 addFeelInt.addEventListener('click', function () {
     const container = `<div class="numberCircle">${contadorInt}</div>
