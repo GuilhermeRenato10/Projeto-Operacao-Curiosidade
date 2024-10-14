@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Operação Curiosidade</title>
     <link rel="stylesheet" href="style-cadOpc.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
 </head>
+
 <body>
     <section class="cadSize">
         <div class="red disable">
@@ -21,21 +24,22 @@
                 <hr>
             </div>
             <div class="scrollbarSection">
-            <div id="attImg">
-                <img id="imgCad" src="../../icons/person.svg" alt="sua-foto">
-                <div id="updateCad">
-                    <button class="layoutButtonCad"><img class="imgUpCad" src="../../icons/arrow-update.svg"
-                            alt="">Atualize sua imagem</button>
-                    <button class="layoutButtonCad"><img class="imgUpCad" src="../../icons/trash.png" alt="">Remover imagem</button>
+                <div id="attImg">
+                    <img id="imgCad" src="../../icons/person.svg" alt="sua-foto">
+                    <div id="updateCad">
+                        <button class="layoutButtonCad"><img class="imgUpCad" src="../../icons/arrow-update.svg"
+                                alt="">Atualize sua imagem</button>
+                        <button class="layoutButtonCad"><img class="imgUpCad" src="../../icons/trash.png" alt="">Remover
+                            imagem</button>
+                    </div>
+                    <div class="styleToggle">
+                        <label id="textStatus" for="checkbox">Inativo</label>
+                        <label>
+                            <input class="toggleStatus" type="checkbox">
+                            <div class="toggleCad disable"></div>
+                        </label>
+                    </div>
                 </div>
-                <div class="styleToggle">
-                    <label id="textStatus" for="checkbox">Inativo</label>
-                    <label>
-                        <input class="toggleStatus" type="checkbox">
-                        <div class="toggleCad disable"></div>
-                    </label>
-                </div>
-            </div>
                 <div class="mainContentOp">
                     <header class="topoOp">
                         <img src="../../icons/idcardP.svg" alt="">
@@ -69,7 +73,7 @@
                         <div id="telEndOp">
                             <div class="labelSobreOp">
                                 <label class="labelLayout" for="tel">Telefone</label>
-                                <input class="padrao" type="number" name="tel" id="tel">
+                                <input class="padrao" type="text" name="tel" id="tel">
                             </div>
                             <div class="labelSobreOp">
                                 <label class="labelLayout" for="estCivil">Estado Civil</label>
@@ -93,39 +97,127 @@
                             </div>
                         </div>
                     </form>
+                    <div class="mainInteresses">
+                        <header class="headerFeel">
+                            <div class="headerLeft">
+                                <img src="../../icons/schoolw.svg" alt="">
+                                <p>Interesses</p>
+                            </div>
+                            <div class="headerRight">
+                                <div class="qtdInteresses">
+                                    <p class="styleP"><span class="numberInt"></span> Interesses</p>
+                                </div>
+                            </div>
+                        </header>
+                        <ul class="interestList">
+                            <li class="interestItem">
+                                <div class="numberCircle">1</div>
+                                <input id="interesseInput" class="interestInput" type="text">
+                                <button class="removeInteresse">X</button>
+                            </li>
+                            <li class="interestItem">
+                                <div class="numberCircle">2</div>
+                                <input id="interesseInput" class="interestInput" type="text">
+                                <button class="removeInteresse">X</button>
+                            </li>
+                            <li class="interestItem">
+                                <div class="numberCircle">3</div>
+                                <input id="interesseInput" class="interestInput" type="text">
+                                <button class="removeInteresse">X</button>
+                            </li>
+                            <li class="interestItem">
+                                <div class="numberCircle">4</div>
+                                <input id="interesseInput" class="interestInput" type="text">
+                                <button class="removeInteresse">X</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mainInteresses">
+                        <header class="headerFeel">
+                            <div class="headerLeft">
+                                <img src="../../icons/heartW.svg" alt="">
+                                <p>Sentimentos</p>
+                            </div>
+                            <div class="headerRight">
+                                <div class="qtdInteresses">
+                                    <p class="styleP"><span class="numberInt"></span> Sentimentos</p>
+                                </div>
+                            </div>
+                        </header>
+                        <ul class="interestList">
+                            <li class="interestItem">
+                                <div class="numberCircle">1</div>
+                                <input id="sentimentoInput" class="interestInput" type="text">
+                                <button class="removeSentimento">X</button>
+                            </li>
+                            <li class="interestItem">
+                                <div class="numberCircle">2</div>
+                                <input id="sentimentoInput" class="interestInput" type="text">
+                                <button class="removeSentimento">X</button>
+                            </li>
+                            <li class="interestItem">
+                                <div class="numberCircle">3</div>
+                                <input id="sentimentoInput" class="interestInput" type="text">
+                                <button class="removeSentimento">X</button>
+                            </li>
+                            <li class="interestItem">
+                                <div class="numberCircle">4</div>
+                                <input id="sentimentoInput" class="interestInput" type="text">
+                                <button class="removeSentimento">X</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mainInteresses">
+                        <header class="headerFeel">
+                            <div class="headerLeft">
+                                <img src="../../icons/leafW.svg" alt="">
+                                <p>Valores</p>
+                            </div>
+                            <div class="headerRight">
+                                <div class="qtdInteresses">
+                                    <p class="styleP"><span class="numberInt"></span> Valores</p>
+                                </div>
+                            </div>
+                        </header>
+                        <ul class="interestList">
+                            <li class="interestItem">
+                                <div class="numberCircle">1</div>
+                                <input id="valor" class="interestInput" type="text">
+                                <button class="removeValor">X</button>
+                            </li>
+                            <li class="interestItem">
+                                <div class="numberCircle">2</div>
+                                <input id="valorInput" class="interestInput" type="text">
+                                <button class="removeValor">X</button>
+                            </li>
+                            <li class="interestItem">
+                                <div class="numberCircle">3</div>
+                                <input id="valorInput" class="interestInput" type="text">
+                                <button class="removeValor">X</button>
+                            </li>
+                            <li class="interestItem">
+                                <div class="numberCircle">4</div>
+                                <input id="valorInput" class="interestInput" type="text">
+                                <button class="removeValor">X</button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="feelings">
-                     <h3 class="estiloIconsOpc">
-                        <img class="iconsOpc" src="../../icons/hatP.svg
-                        " alt="">Interesses</h3>
-                     <p>Escreva no campo abaixo e pressione a tecla <strong>Enter</strong></p>
-                     <textarea class="areaPadrao" name="feel" id="feel"></textarea>
-                </div>
-                <div class="feelings">
-                    <h3 class="estiloIconsOpc">
-                       <img class="iconsOpc" src="../../icons/heart.png" alt="">Sentimentos</h3>
-                    <p>Escreva no campo abaixo e pressione a tecla <strong>Enter</strong></p>
-                    <textarea class="areaPadrao" name="feel" id="feel"></textarea>
-               </div>
-               <div class="feelings">
-                <h3 class="estiloIconsOpc">
-                   <img class="iconsOpc" src="../../icons/leaf.png" alt="">Valores</h3>
-                <p>Escreva no campo abaixo e pressione a tecla <strong>Enter</strong></p>
-                <textarea class="areaPadrao" name="feel" id="feel"></textarea>
-                </div>
-                </div>
-                <div id="linhaCadfooter">
-                    <hr>
-                </div>
+            </div>
+            <div id="linhaCadfooter">
+                <hr>
+            </div>
             <footer class="rodapeCad">
                 <button id="saveCadOp">
                     <img id="saveAsCadOp" src="../../icons/save as.svg" alt="">Salvar
                 </button>
             </footer>
+        </div>
     </section>
-    <script src="script-cadOpc.js"></script>
+    <script type="module" src="script-cadOpc.js"></script>
 </body>
 
 </html>
 </body>
+
 </html>

@@ -125,7 +125,7 @@ div.bottom-submit {
     padding: 0px;
 }
 
-a#enter {
+#enter {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,6 +139,7 @@ a#enter {
     width: 12vw;  
     height: 6vh;  
     text-decoration: none;
+    cursor: pointer;
 }
 
 /* --------------------------------------------------------------------------------------------------------- */
@@ -188,4 +189,13 @@ img.logoFL {
 .slick-dots li button {
     width: 50px;
     height: 50px;
-  }
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+}

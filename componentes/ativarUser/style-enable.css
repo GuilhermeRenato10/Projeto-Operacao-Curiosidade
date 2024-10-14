@@ -49,7 +49,7 @@ span#styleP {
     color: var(--main-color);
 }
 
-div.buttonsDel {
+div.buttonsActive {
     display: flex;
     gap: 1em;
     justify-content: flex-end;
@@ -66,19 +66,27 @@ button#delCancel {
     cursor: pointer;
 }
 
-button#delExc {
+button#enableUser {
     display: flex;
     align-items: center;
-    color: #a31212;
-    border: 1px solid #a31212;
+    color: #008000;
+    border: 1px solid rgb(129, 245, 129);
     border-radius: 8px;
     gap: 0.3em;
     font-family: 'Poppins';
-    background-color: white;
+    background-color: rgb(206, 250, 206);
     padding: 2px 20px 2px 20px;
     cursor: pointer;
 }
 
 img#trashDel {
     height: 15px;
+}
+
+strong {
+    color: var(--main-color);
+}
+
+span{
+    color: var(--main-color);
 }

@@ -155,8 +155,7 @@ label.labelLayout {
     font-size: var(--main-font-size);
 }
 
-input.padrao {
-    margin-bottom: 2%;
+.padrao {
     border-radius: 5px;
     border: 1px solid lightgray;
     padding: 5px;
@@ -222,4 +221,13 @@ button#saveCad {
 
 img#saveAsCad {
     width: 15px;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
 }

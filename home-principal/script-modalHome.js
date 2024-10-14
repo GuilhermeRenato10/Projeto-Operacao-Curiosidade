@@ -1,3 +1,6 @@
+import { removerCuriosidade } from "../services/serviceCadastro.js";
+import { buscarUsuarioById } from "../services/serviceUsuarios.js";
+
 const modal = document.querySelector('.modal');
 const closeBtn = document.querySelector('#close');
 const sectionShare = document.querySelector('.tamanho');
@@ -20,7 +23,15 @@ const notificacoes = document.querySelector('#bell');
 const dropNot = document.querySelector('#sizeNot');
 const cadastroCC = document.querySelector('#cc');
 const openNot = document.querySelector('.sizeNot');
+const usuarioLogado = document.querySelector('.comando');
 
+async function getUsuario() {
+    const usuarioId = localStorage.getItem('authUsuarioId');
+    const usuario = await buscarUsuarioById(usuarioId);
+    usuarioLogado.innerHTML = `<p>${usuario.fatosDados.nome}</p>
+    <p>${usuario.tipo ? '[Administrador]' : '[Operador]'}</p>`    
+} 
+getUsuario();
 
 openNot.addEventListener('click', function (){
     modal.style.display = "none";
@@ -31,38 +42,55 @@ openNot.addEventListener('click', function (){
     frame.src = './telas-iframes/shareCom.html'
 })
 
+async function excluirCuriosidade(id) {
+    console.log(id);
+    await removerCuriosidade(id);
+}
+
+let curId = '';
 
 window.addEventListener('message', function(event) {
-    if (event.data === 'openModal') {
+    const { action, curiosidadeId } = event.data;
+    if (action === 'openModal') {
         modal.style.display = 'flex';
         sectionShare.style.display = 'flex';
-    }else if (event.data === 'openDel'){
+    }else if (action === 'openDel'){
         modal.style.display = 'flex';
         containerFrame.src = '../componentes/defDel/defdelete.html';
         containerFrame.width = 450; /*Colocar o valor necessário*/ 
         containerFrame.height = 200;
         containerFrame.style.display = 'flex';
-    }else if (event.data === 'cancelarDel'){
+        curId = curiosidadeId;
+    }else if (action === 'cancelarDel'){
         modal.style.display = 'none';
         containerFrame.style.display = 'none';
-    }else if (event.data === 'openEdit'){
+    }else if (action === 'removerOp') {
+        modal.style.display = 'none';
+        containerFrame.style.display = 'none';
+        excluirCuriosidade(curId);
+        this.location.reload();
+    }
+    else if (action === 'openEdit'){
         modal.style.display = 'flex';
         containerFrame.style.display = 'flex';
         containerFrame.src = '../componentes/cadOpv2/cadOpc.html';
         containerFrame.width = 800;  
         containerFrame.height = 600;
-    }else if (event.data === 'closeEdit'){
+        this.localStorage.setItem('curiosidadeUsuarioId', curiosidadeId);
+        console.log(this.localStorage.getItem('curiosidadeUsuarioId'));
+    }else if (action === 'closeEdit'){
         modal.style.display = 'none';
         containerFrame.style.display = 'none';
-    }else if (event.data === 'saveEdit'){
+    }else if (action === 'saveEdit'){
         modal.style.display = 'none';
         containerFrame.style.display = 'none';
-    }else if (event.data === 'closeEditOp'){
+    }else if (action === 'closeEditOp'){
         modal.style.display = 'none';
         containerFrame.style.display = 'none';
-    }else if (event.data === 'salvarEdit'){
+    }else if (action === 'salvarEdit'){
         modal.style.display = 'none';
         containerFrame.style.display = 'none';
+        this.location.reload();
     }
 });
 

@@ -1,9 +1,10 @@
 import { buscarUsuarioById, updateUsuario } from "../../services/serviceUsuarios.js";
 
 const cancelarOperacao = document.querySelector('#delCancel');
-const desabilitar = document.querySelector('#delDisable');
+const habilitar = document.querySelector('#enableUser');
+console.log(habilitar);
 
-async function inativarUsuario() {
+async function ativarUsuario() {
     const usuarioId = localStorage.getItem('usuarioId');
     let usuario = await buscarUsuarioById(usuarioId);
     usuario.ativo = !usuario.ativo;
@@ -12,10 +13,10 @@ async function inativarUsuario() {
 }   
 
 cancelarOperacao.addEventListener('click', function(){
-    window.parent.postMessage({action: 'cancelarDel'}, '*')
+    window.parent.postMessage({action: 'cancelarAtivacao'}, '*')
 })
 
-desabilitar.addEventListener('click', async function(){
-    await inativarUsuario();
-    window.parent.postMessage({action: 'desabilitar'}, '*')
+habilitar.addEventListener('click', async function(){
+    await ativarUsuario();
+    window.parent.postMessage({action: 'habilitar'}, '*')
 })

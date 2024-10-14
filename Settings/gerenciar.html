@@ -55,10 +55,11 @@
                 </div>
             </div>
         <main id="analise">
-            <div id="filtros">
+            <form id="filtros">
                 <div class="cons">
                     <label class="labelLayout" for="status">Status</label>
                     <select class="geral" id="status">
+                        <option value=""selected disabled>Selecione uma opção</option>
                         <option value="atv">Ativo</option>
                         <option value="inv">Inativo</option>
                     </select>
@@ -66,12 +67,13 @@
                 <div class="cons">
                     <label class="labelLayout" for="tipo">Tipo</label>
                     <select class="geral" id="tipo">
+                        <option value=""selected disabled>Selecione uma opção</option>
                         <option value="adm">Administrador</option>
                         <option value="op">Operador</option>
                     </select>
                 </div>
                 <div class="cons">
-                    <label class="labelLayout" for="code">Nome ou Código</label>
+                    <label class="labelLayout" for="code">Código</label>
                     <input type="text" name="code" id="code">
                 </div>
                 <div class="cons">
@@ -79,11 +81,11 @@
                     <input type="date" name="period" id="period">
                 </div>
                 <div id="espacamentoButtons">
-                    <button class="equal">Limpar</button>
-                    <button class="equal">Filtrar</button>
+                    <button type="submit" class="equal">Limpar</button>
+                    <button type="submit" class="equal">Filtrar</button>
                     <button id="buttonUser">Criar Usuário</button>
                 </div>
-            </div>
+            </form>
             <div id="search">
                 <input class="checks" type="checkbox" name="check" id="check">
                 <p class="codeColumn">Código <img class="imgArrow" src="../icons/arrow down.svg" alt=""></p>
@@ -93,77 +95,9 @@
                 <p class="stateColumn">Status <img class="imgArrow" src="../icons/arrow down.svg" alt=""></p>
                 <p class="typeColumn">Tipo<img class="imgArrow" src="../icons/arrow down.svg" alt=""></p>
             </div>
-                <div id="overflow">
-                    <div class="gerenciamento">
-                        <input class="checks" type="checkbox" name="check" id="check1">
-                        <p class="codeColumn">25-01514</p>
-                        <p class="nameColumn">Pamela Fernandes Mattos</p>
-                        <p class="emailColumn">pamelafm@fakemail.com</p>
-                        <p class="dateColumn">10/09/2024</p>
-                        <p class="statusLayout1" class="stateColumn">Ativo</p>
-                        <p id="operator1" class="typeColumn">Operador</p>
-
-                        <div class="dropButton">
-                            <button class="details"><img class="imgTp" src="../icons/tpwhite.svg" alt="">Detalhes
-                            </button>
-                            <ul id="options">
-                                <li id="altDrop" class="styleOptions">Alterar<img class="sizeImgDrop" src="../icons/pencilW.svg" alt=""></li>
-                                <li id="shareDrop" class="styleOptions">Compartilhar<img class="sizeImgDrop" src="../icons/keyboardp.svg" alt=""></li>
-                                <li id="removeDrop" class="styleOptions">Inativar<img class="sizeImgDrop" src="../icons/remove.svg" alt=""></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="gerenciamento">
-                        <input class="checks" type="checkbox" name="check" id="check1">
-                        <p class="codeColumn">23-12034</p>
-                        <p class="nameColumn">Guilherme Silva Almeida</p>
-                        <p class="emailColumn">guisilva32@fakemail.com</p>
-                        <p class="dateColumn">10/09/2024</p>
-                        <p id="statusLayout2" class="stateColumn">Ativo</p>
-                        <p id="operator2" class="typeColumn">Operador</p>
-                        <button class="details"><img class="imgTp" src="../icons/tpwhite.svg" alt="">Detalhes</button>
-                    </div>
-                    <div class="gerenciamento">
-                        <input class="checks" type="checkbox" name="check" id="check1">
-                        <p class="codeColumn">25-01514</p>
-                        <p class="nameColumn">Luiza Souza Carvalho</p>
-                        <p class="emailColumn">luizasc@fakemail.com</p>
-                        <p class="dateColumn">10/09/2024</p>
-                        <p id="statusLayout3" class="stateColumn">Ativo</p>
-                        <p id="operator3" class="typeColumn">Operador</p>
-                        <button class="details"><img class="imgTp" src="../icons/tpwhite.svg" alt="">Detalhes</button>
-                    </div>
-                    <div class="gerenciamento">
-                        <input class="checks" type="checkbox" name="check" id="check1">
-                        <p class="codeColumn">23-13030</p>
-                        <p class="nameColumn">Pedro Cruz Rocha</p>
-                        <p class="emailColumn">pedrocruz14@fakemail.com</p>
-                        <p class="dateColumn">10/09/2024</p>
-                        <p id="statusLayout4" class="stateColumn">Ativo</p>
-                        <p id="admin1" class="typeColumn">Administrador</p>
-                        <button class="details"><img class="imgTp" src="../icons/tpwhite.svg" alt="">Detalhes</button>
-                    </div>
-                    <div class="gerenciamento">
-                        <input class="checks" type="checkbox" name="check" id="check1">
-                        <p class="codeColumn">21-01227</p>
-                        <p class="nameColumn">Maria Luiza Cardoso</p>
-                        <p class="emailColumn">malucardoso10@fakemail.com</p>
-                        <p class="dateColumn">10/09/2024</p>
-                        <p class="statusLayoutRed" class="stateColumn">Inativo</p>
-                        <p id="operator4" class="typeColumn">Operador</p>
-                        <button class="details"><img class="imgTp" src="../icons/tpwhite.svg" alt="">Detalhes</button>
-                    </div>
-                    <div class="gerenciamento">
-                        <input class="checks" type="checkbox" name="check" id="check1">
-                        <p class="codeColumn">26-01513</p>
-                        <p class="nameColumn">Alice Alves Machado</p>
-                        <p class="emailColumn">alicemachado@fakemail.com</p>
-                        <p class="dateColumn">10/09/2024</p>
-                        <p id="statusLayout5" class="stateColumn">Ativo</p>
-                        <p id="operator5" class="typeColumn">Operador</p>
-                        <button class="details"><img class="imgTp" src="../icons/tpwhite.svg" alt="">Detalhes</button>
-                    </div>
-                </div>
+                <ul id="overflow">
+                   
+                </ul>
             <div class="paginacao">
                 <div class="pageRight">
                     <p class="subtitle">Itens por página</p>
@@ -186,6 +120,6 @@
     <div class="modal">
         <iframe id="frameCad" src="../componentes/cadUser/cadUser.html" frameborder="0" width="820" height="640"></iframe>
     </div>
-    <script src="script-gerenciamento.js"></script>
+    <script type="module" src="script-gerenciamento.js"></script>
 </body>
 </html>
